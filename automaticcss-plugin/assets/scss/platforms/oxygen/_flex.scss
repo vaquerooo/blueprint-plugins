@@ -1,0 +1,85 @@
+// Main Flex
+
+@each $direction, $value in $flexDirections {
+  .flex--#{$direction}:not(.ct-section),
+  .ct-section.flex--#{$direction} .ct-section-inner-wrap {
+    display: flex;
+    flex-direction: #{$value};
+  }
+}
+
+// Flex Breakpoints
+
+@include breakpoint(xl) {
+  @each $direction, $value in $flexDirections {
+    .flex--#{$direction}-xl:not(.ct-section),
+    .ct-section.flex--#{$direction}-xl .ct-section-inner-wrap {
+      display: flex;
+      flex-direction: #{$value};
+    }
+  }
+}
+
+@include breakpoint(l) {
+  @each $direction, $value in $flexDirections {
+    .flex--#{$direction}-l:not(.ct-section),
+    .ct-section.flex--#{$direction}-l .ct-section-inner-wrap {
+      display: flex;
+      flex-direction: #{$value};
+    }
+  }
+}
+
+@include breakpoint(m) {
+  @each $direction, $value in $flexDirections {
+    .flex--#{$direction}-m:not(.ct-section),
+    .ct-section.flex--#{$direction}-m .ct-section-inner-wrap {
+      display: flex;
+      flex-direction: #{$value};
+    }
+  }
+}
+
+@include breakpoint(s) {
+  @each $direction, $value in $flexDirections {
+    .flex--#{$direction}-s:not(.ct-section),
+    .ct-section.flex--#{$direction}-s .ct-section-inner-wrap {
+      display: flex;
+      flex-direction: #{$value};
+    }
+  }
+}
+
+// Flex Alignments
+
+@each $alignmentType, $directionSet in $alignments {
+  @each $direction, $value in $directionSet {
+    @if $alignmentType != self {
+      .#{$alignmentType}--#{$direction}:not(.ct-section),
+      .ct-section.#{$alignmentType}--#{$direction} .ct-section-inner-wrap {
+        display: flex;
+        #{$alignmentType}: $value;
+      }
+    } @else if $alignmentType == self {
+      .#{$alignmentType}--#{$direction}:not(.ct-section),
+      .ct-section.#{$alignmentType}--#{$direction} .ct-section-inner-wrap {
+        display: flex;
+        align-self: $value;
+      }
+    }
+  }
+}
+
+.flex--wrap:not(.ct-section),
+.ct-section.flex--wrap > .ct-section-inner-wrap {
+  flex-wrap: wrap;
+}
+
+.stretch:not(.ct-section),
+.ct-section.stretch .ct-section-inner-wrap {
+  display: flex;
+  align-content: stretch;
+  align-items: stretch;
+  justify-content: stretch;
+  justify-items: stretch;
+}

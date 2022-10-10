@@ -1,0 +1,10 @@
+# Files
+.DS_Store
+npm-debug.log
+yarn-error.log
+
+# Directories
+node_modules/
+bower_components/
+.sass-cache/
+css-dist/

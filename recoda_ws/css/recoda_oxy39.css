@@ -1,0 +1,38 @@
+.oxy-version-39 .position .oxygen-four-sides-measure-box .oxygen-measure-box {
+  min-width: 45% !important;
+}
+.oxy-version-39.ws-mbha .oxygen-measure-box{
+  position: relative;
+}
+html[ng-app="CTFrontendBuilderUI"]:not(.ct_inner, .oxygen-builder-body){
+  font-size: 100% !important;
+}
+html:not([ws-dom="turn-off"]) body#ct-controller-ui.hydrogen-structure-enhancer-on.hydrogen-structure-v2 #ct-dom-tree-2 .ct-expand-butt span.ct-icon::before,
+html:not([ws-dom="turn-off"]) body#ct-controller-ui.hydrogen-structure-enhancer-on.hydrogen-structure-v3 #ct-dom-tree-2 .ct-expand-butt span.ct-icon::before{
+  content: "" !important;
+}
+html:not([ws-dom="turn-off"]) body.hydrogen-structure-enhancer-on.hydrogen-structure-v3 #ct-dom-tree-2 .dom-tree-node .sub-tree{
+  margin-left: -7px !important;
+}
+html:not([ws-dom="turn-off"]) body.hydrogen-structure-enhancer-on.hydrogen-structure-v2 #ct-dom-tree-2 .ct-expand-butt, body.hydrogen-structure-enhancer-on.hydrogen-structure-v3 #ct-dom-tree-2 .ct-expand-butt{
+  left: -24px;
+}
+.oxygen-file-input{
+  position: relative;
+}
+.oxygen-file-input input:focus{
+  position: absolute;
+  width: 100%;
+  top:0;
+  left: 0;
+  min-height: 100%;
+  background: var(--theme-darker) !important;
+  opacity: 1 !important;
+  z-index: 9;
+}
+.wp-picker-holder > div{
+  border-color: var(--theme-darker-darker) !important;
+}
+.oxygen-color-picker .oxygen-color-picker-color{
+  min-width: fit-content;
+}

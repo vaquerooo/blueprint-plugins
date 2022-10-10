@@ -1,0 +1,159 @@
+// Grids
+@each $grid-type, $col-set in $grids {
+  @each $col-count, $value in $col-set {
+    .grid--#{$col-count}:not(.ct-section),
+    .ct-section.grid--#{$col-count} .ct-section-inner-wrap {
+      display: grid !important;
+      grid-template-columns: #{$value};
+      width: 100%;
+    }
+  }
+}
+// Grid Breakpoints
+@include breakpoint(xl) {
+  @each $grid-type, $col-set in $grids {
+    @each $col-count, $value in $col-set {
+      @if $grid-type == standard {
+        .grid--xl-#{$col-count}:not(.ct-section),
+        .ct-section.grid--xl-#{$col-count} .ct-section-inner-wrap {
+          grid-template-columns: #{$value};
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(l) {
+  @each $grid-type, $col-set in $grids {
+    @each $col-count, $value in $col-set {
+      @if $grid-type == standard {
+        .grid--l-#{$col-count}:not(.ct-section),
+        .ct-section.grid--l-#{$col-count} .ct-section-inner-wrap {
+          grid-template-columns: #{$value};
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(m) {
+  @each $grid-type, $col-set in $grids {
+    @each $col-count, $value in $col-set {
+      @if $grid-type == standard {
+        .grid--m-#{$col-count}:not(.ct-section),
+        .ct-section.grid--m-#{$col-count} .ct-section-inner-wrap {
+          grid-template-columns: #{$value};
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(s) {
+  @each $grid-type, $col-set in $grids {
+    @each $col-count, $value in $col-set {
+      @if $grid-type == standard {
+        .grid--s-#{$col-count}:not(.ct-section),
+        .ct-section.grid--s-#{$col-count} .ct-section-inner-wrap {
+          grid-template-columns: #{$value};
+        }
+      }
+    }
+  }
+}
+
+// Auto Staggered Grid Mobile Fix
+
+@include breakpoint(l) {
+  .grid--auto-1-2:not(.ct-section),
+  .ct-section.grid--auto-1-2 .ct-section-inner-wrap {
+    display: grid !important;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(#{$auto-break-3}, 100vw - #{$auto-grid-math}), 1fr)
+    );
+  }
+  .grid--auto-1-3:not(.ct-section),
+  .ct-section.grid--auto-1-3 .ct-section-inner-wrap {
+    display: grid !important;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(#{$auto-break-3}, 100vw - #{$auto-grid-math}), 1fr)
+    );
+  }
+  .grid--auto-3-2:not(.ct-section),
+  .ct-section.grid--auto-3-2 .ct-section-inner-wrap {
+    display: grid !important;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(#{$auto-break-3}, 100vw - #{$auto-grid-math}), 1fr)
+    );
+  }
+  .grid--auto-2-3:not(.ct-section),
+  .ct-section.grid--auto-2-3 .ct-section-inner-wrap {
+    display: grid !important;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(#{$auto-break-3}, 100vw - #{$auto-grid-math}), 1fr)
+    );
+  }
+  .grid--auto-2-1:not(.ct-section),
+  .ct-section.grid--auto-2-1 .ct-section-inner-wrap {
+    display: grid !important;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(#{$auto-break-3}, 100vw - #{$auto-grid-math}), 1fr)
+    );
+  }
+  .grid--auto-3-1:not(.ct-section),
+  .ct-section.grid--auto-3-1 .ct-section-inner-wrap {
+    display: grid !important;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(#{$auto-break-3}, 100vw - #{$auto-grid-math}), 1fr)
+    );
+  }
+}
+
+// Grid Gaps
+
+@each $size, $extension in $sizeExtensions {
+  .gap--#{$extension}:not(.ct-section),
+  .ct-section.gap--#{$extension} > .ct-section-inner-wrap {
+    @if $size == xs {
+      @include map-get-gap(xs);
+    } @else if $size == s {
+      @include map-get-gap(s);
+    } @else if $size == m {
+      @include map-get-gap(m);
+    } @else if $size == l {
+      @include map-get-gap(l);
+    } @else if $size == xl {
+      @include map-get-gap(xl);
+    } @else if $size == xxl {
+      @include map-get-gap(xxl);
+    }
+  }
+}
+@each $breakpoint, $value in $breakpoints {
+  @include breakpoint($breakpoint) {
+    @each $size, $extension in $sizeExtensions {
+      .gap--#{$breakpoint}-#{$extension}:not(.ct-section),
+      .ct-section.gap--#{$breakpoint}-#{$extension} > .ct-section-inner-wrap {
+        @if $size == xs {
+          @include map-get-gap(xs);
+        } @else if $size == s {
+          @include map-get-gap(s);
+        } @else if $size == m {
+          @include map-get-gap(m);
+        } @else if $size == l {
+          @include map-get-gap(l);
+        } @else if $size == xl {
+          @include map-get-gap(xl);
+        } @else if $size == xxl {
+          @include map-get-gap(xxl);
+        }
+      }
+    }
+  }
+}

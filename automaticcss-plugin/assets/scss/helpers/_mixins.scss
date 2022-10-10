@@ -1,0 +1,317 @@
+// MAX WIDTH
+@mixin breakpoint($extension) {
+  @media (max-width: map-get($breakpoints, $extension)) {
+    @content;
+  }
+}
+
+// MIN WIDTH
+@mixin breakpoint-up($extension) {
+  @media (min-width: map-get($breakpoints, $extension)) {
+    @content;
+  }
+}
+
+// Text
+@mixin fluid-text($pure, $min, $max) {
+  font-size: $pure;
+  font-size: fluidCalc($min, $max);
+  font-size: fluidClamp($min, $max);
+}
+
+@mixin map-get-fluid-text($extension) {
+  font-size: map-get(map-get($textSizing, pure), text-#{$extension}-pure);
+  font-size: map-get(map-get($textSizing, calc), text-#{$extension}-calc);
+  font-size: map-get(map-get($textSizing, clamp), text-#{$extension}-clamp);
+}
+
+@mixin map-get-fluid-heading($extension) {
+  font-size: map-get(map-get($headingSizes, pure), #{$extension}-pure);
+  font-size: map-get(map-get($headingSizes, calc), #{$extension}-calc);
+  font-size: map-get(map-get($headingSizes, clamp), #{$extension}-clamp);
+}
+
+// Padding
+@mixin fluid-padding($pure, $min, $max) {
+  padding: $pure;
+  padding: fluidCalc($min, $max);
+  padding: fluidClamp($min, $max);
+}
+
+@mixin map-get-padding($extension) {
+  padding: map-get(map-get($spacing, pure), space-#{$extension}-pure);
+  padding: map-get(map-get($spacing, calc), space-#{$extension}-calc);
+  padding: map-get(map-get($spacing, clamp), space-#{$extension}-clamp);
+}
+
+@mixin fluid-section-padding($pure, $min, $max) {
+  padding: $pure rem($section-padding-x-pure);
+  padding: fluidCalc($min, $max)
+    fluidCalc($section-padding-x-min, $section-padding-x-max);
+  padding: fluidClamp($min, $max)
+    fluidClamp($section-padding-x-min, $section-padding-x-max);
+}
+
+@mixin map-get-section-spacing($extension) {
+  padding: map-get(
+      map-get($sectionSpacing, pure),
+      section-space-#{$extension}-pure
+    )
+    rem($section-padding-x-pure);
+  padding: map-get(
+      map-get($sectionSpacing, calc),
+      section-space-#{$extension}-calc
+    )
+    fluidCalc($section-padding-x-min, $section-padding-x-max);
+  padding: map-get(
+      map-get($sectionSpacing, clamp),
+      section-space-#{$extension}-clamp
+    )
+    fluidClamp($section-padding-x-min, $section-padding-x-max);
+}
+
+@mixin map-get-header-padding($extension) {
+  padding: map-get(map-get($spacing, pure), space-#{$extension}-pure) 0;
+  padding: map-get(map-get($spacing, calc), space-#{$extension}-calc) 0;
+  padding: map-get(map-get($spacing, clamp), space-#{$extension}-clamp) 0;
+}
+
+// Buttons
+@mixin btn-default {
+  padding: $btn-pad-y $btn-pad-x;
+  border-width: $btn-border-size;
+  border-radius: $btn-radius;
+  text-transform: $btn-text-transform;
+  letter-spacing: $btn-letter-spacing;
+  font-weight: $btn-weight;
+  min-width: rem($btn-width);
+  line-height: $btn-line-height;
+}
+
+@mixin outline-btn-default {
+  padding: $btn-pad-y $btn-pad-x;
+  border-width: $outline-btn-border-size;
+  border-radius: $btn-radius;
+  text-transform: $btn-text-transform;
+  font-weight: $btn-weight;
+}
+
+@mixin btn-primary {
+  background-color: $btn-primary-bg;
+  color: $btn-primary-text;
+  padding: $btn-pad-y $btn-pad-x;
+  border-width: $btn-border-size;
+  border-color: $btn-primary-border-color;
+  border-radius: $btn-radius;
+  text-transform: $btn-text-transform;
+  letter-spacing: $btn-letter-spacing;
+  font-weight: $btn-weight;
+  @if $option-btn-text-size == on {
+    font-size: $text-m-pure;
+    font-size: fluidCalc($btn-text-min, $btn-text-max);
+    font-size: fluidClamp($btn-text-min, $btn-text-max);
+  } @else {
+    font-size: $text-m-pure;
+    font-size: fluidCalc($text-m-min, $text-m-max);
+    font-size: fluidClamp($text-m-min, $text-m-max);
+  }
+}
+
+@mixin if-btn-text-size-on {
+  @if $btn-text-size-option == on {
+    @content;
+  }
+}
+
+@mixin btn-primary-hover {
+  border-width: $btn-border-size;
+  background-color: $btn-primary-hover;
+  color: $btn-primary-hover-text;
+  border-color: $btn-primary-hover-border-color;
+}
+
+// Owl Spacing
+@mixin map-get-owl($extension) {
+  margin-top: map-get(map-get($spacing, pure), space-#{$extension}-pure);
+  margin-top: map-get(map-get($spacing, calc), space-#{$extension}-calc);
+  margin-top: map-get(map-get($spacing, clamp), space-#{$extension}-clamp);
+}
+
+// Gap
+@mixin map-get-gap($extension) {
+  gap: map-get(map-get($spacing, pure), space-#{$extension}-pure);
+  gap: map-get(map-get($spacing, calc), space-#{$extension}-calc);
+  gap: map-get(map-get($spacing, clamp), space-#{$extension}-clamp);
+}
+
+// Columns Gap
+@mixin map-get-col-gap($extension) {
+  -moz-column-gap: map-get(map-get($spacing, pure), space-#{$extension}-pure);
+  column-gap: map-get(map-get($spacing, pure), space-#{$extension}-pure);
+  -moz-column-gap: map-get(map-get($spacing, calc), space-#{$extension}-calc);
+  column-gap: map-get(map-get($spacing, calc), space-#{$extension}-calc);
+  -moz-column-gap: map-get(map-get($spacing, clamp), space-#{$extension}-clamp);
+  column-gap: map-get(map-get($spacing, clamp), space-#{$extension}-clamp);
+}
+
+// Platform & Feature Options
+
+@mixin if-builders-off {
+  @if $option-bricks == off and $option-oxygen == off {
+    @content;
+  }
+}
+
+@mixin if-woocommerce-on {
+  @if $option-woocommerce == on {
+    @content;
+  }
+}
+
+@mixin if-smooth-scrolling-on {
+  @if $option-smooth-scrolling == on {
+    @content;
+  }
+}
+
+@mixin if-wsform-on {
+  @if $option-wsform == on {
+    @content;
+  }
+}
+
+@mixin if-bricks-on {
+  @if $option-bricks == on {
+    @content;
+  }
+}
+
+@mixin if-bricks-off {
+  @if $option-bricks == off {
+    @content;
+  }
+}
+
+@mixin if-oxygen-off {
+  @if $option-oxygen == off {
+    @content;
+  }
+}
+
+// Site Defaults
+
+@mixin site-defaults {
+  body {
+    @include map-get-fluid-text(m);
+    line-height: $base-text-lh;
+    background-color: $body-bg-color;
+    color: $body-color;
+  }
+
+  body a {
+    color: $link-color;
+    font-weight: $link-weight;
+    -webkit-text-decoration: $link-decoration;
+    text-decoration: $link-decoration;
+
+    &:hover {
+      color: $link-color-hover;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    a {
+      font-weight: inherit;
+      text-decoration: inherit;
+    }
+  }
+
+  h1 {
+    @include map-get-fluid-heading(h1);
+    line-height: $h1-lh;
+    color: $h1-color;
+  }
+  h2 {
+    @include map-get-fluid-heading(h2);
+    line-height: $h2-lh;
+    color: $h2-color;
+  }
+  h3 {
+    @include map-get-fluid-heading(h3);
+    line-height: $h3-lh;
+    color: $h3-color;
+  }
+  h4 {
+    @include map-get-fluid-heading(h4);
+    line-height: $h4-lh;
+    color: $h4-color;
+  }
+  h5 {
+    @include map-get-fluid-heading(h5);
+    line-height: $h5-lh;
+    color: $h5-color;
+  }
+  h6 {
+    @include map-get-fluid-heading(h6);
+    line-height: $h6-lh;
+    color: $h6-color;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    max-width: $heading-line-length;
+  }
+
+  p {
+    max-width: $text-line-length;
+  }
+}
+
+// Focus Style
+
+@mixin default-focus-style {
+  outline-style: solid;
+  outline-color: $focus-color;
+  outline-width: 0.2rem;
+  outline-offset: $focus-offset;
+}
+
+@mixin focus-styles {
+  *:focus,
+  button:focus {
+    @include default-focus-style;
+  }
+
+  *:focus:not(:focus-visible),
+  button:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /*Disables focus on finger touch for mobile devices*/
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  // Custom Focus Colors
+  // Requires Builder Overrides
+
+  @each $color, $value in $coreColors {
+    *:focus {
+      &.focus--#{$color} {
+        outline-color: #{$value};
+      }
+    }
+    .focus--#{$color} *:focus {
+      outline-color: #{$value};
+    }
+  }
+}

@@ -1,0 +1,179 @@
+#select2-oxy-oe_countdown_oe_countdown_timezone-container{color:#fff!important;}
+
+.oe-countdown.oe-timer{ width:100%;}
+
+.oe-countdown.oe-fixed-date-countWeeks,
+.oe-countdown.oe-fixed-date-countDays,
+.oe-countdown.oe-fixed-date-countHours,
+.oe-countdown.oe-fixed-date-countMinutes,
+.oe-countdown.oe-fixed-date-countSeconds,
+.oe-countdown.oe-evergreen-date-countWeeks,
+.oe-countdown.oe-evergreen-date-countDays,
+.oe-countdown.oe-evergreen-date-countHours,
+.oe-countdown.oe-evergreen-date-countMinutes,
+.oe-countdown.oe-evergreen-date-countSeconds {
+    border: 4px solid #000;
+    border-radius: 50%;
+    padding: 30px;
+    margin-right: 20px;
+}
+
+.oe-countdown-item .oe-countdown-label,
+.oe-countdown-item .oe-countdown-digit {
+    padding: 0;
+    margin: 0;
+}
+
+.oe-countdown .oe-countdown-digit-wrapper.square {
+    display: -webkit-box;
+    display: -ms-flexbox;
+	display: flex;
+	box-pack: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+	justify-content: center;
+	box-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+	align-items: center;
+	box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-direction: normal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.countdown-rtl {
+    direction: rtl;
+}
+.countdown-holding span {
+    color: #888;
+}
+.countdown-row {
+    clear: both;
+    width: 100%;
+    padding: 0px 2px;
+    text-align: center;
+}
+.countdown-show1 .countdown-section {
+    width: 98%;
+}
+.countdown-show2 .countdown-section {
+    width: 48%;
+}
+.countdown-show3 .countdown-section {
+    width: 32.5%;
+}
+.countdown-show4 .countdown-section {
+    width: 24.5%;
+}
+.countdown-show5 .countdown-section {
+    width: 19.5%;
+}
+.countdown-show6 .countdown-section {
+    width: 16.25%;
+}
+.countdown-show7 .countdown-section {
+    width: 14%;
+}
+.countdown-section {
+    display: block;
+    font-size: 75%;
+    text-align: center;
+}
+.countdown-amount {
+    font-size: 200%;
+}
+.countdown-period {
+    display: block;
+}
+.countdown-descr {
+    display: block;
+    width: 100%;
+}
+
+.oe-countdown-fixed-timer,
+.oe-countdown-evergreen-timer {
+    width: 100%;
+    display: block;
+}
+.oe-countdown-fixed-timer .oe-countdown-item,
+.oe-countdown-evergreen-timer .oe-countdown-item {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+	position: relative;
+}
+
+.oe-countdown.oe-countdown-separator-colon .oe-countdown-item:first-child {
+    padding-left: 0!important;
+}
+
+.oe-countdown.oe-countdown-separator-colon .oe-countdown-item:last-child {
+    padding-right: 0!important;
+}
+
+.oe-countdown-digit-wrapper,
+.oe-countdown-label-wrapper {
+	text-align: center;
+	position: relative;
+}
+
+/* Timer separator */
+.oe-countdown-separator-line .oe-countdown-item {
+	position: relative;
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.oe-countdown-separator-colon .oe-countdown-item .oe-countdown-digit-wrapper:after {
+	content: ':';
+	display: inline-block;
+	font-size: 30px;
+    line-height: 1.325;
+	position: absolute;
+	right: -5px;
+	top: 50%;
+	z-index: 10;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+			transform: translateY(-50%);
+    text-align: right;
+}
+.oe-countdown-separator-line .oe-countdown-item:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0;
+    right: 0;
+	bottom: 0;
+	z-index: 10;
+	border-right: 1px solid #ccc;
+}
+.oe-countdown-separator-colon .oe-countdown-item:not(.label-position-right):last-child .oe-countdown-digit-wrapper:after,
+.oe-countdown-separator-line .oe-countdown-item:last-child:after {
+	content: none;
+}
+
+.oe-countdown-item.label-position-right {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.label-position-right .oe-countdown-label-wrapper,
+.label-position-left .oe-countdown-label-wrapper {
+    padding: 1rem;
+}
+
+.oe-countdown-item.label-position-left {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+

@@ -1,0 +1,18 @@
+$vp-min: 32 !default;
+$vp-max: 128 !default;
+$breakpoint-s: 480px !default;
+$breakpoint-m: 768px !default;
+$breakpoint-l: 992px !default;
+$breakpoint-xl: 1280px !default;
+
+$breakpoint-s-val: $breakpoint-s - 1px;
+$breakpoint-m-val: $breakpoint-m - 1px;
+$breakpoint-l-val: $breakpoint-l - 1px;
+$breakpoint-xl-val: $breakpoint-xl - 1px;
+
+$breakpoints: (
+  xl: $breakpoint-xl-val,
+  l: $breakpoint-l-val,
+  m: $breakpoint-m-val,
+  s: $breakpoint-s-val,
+);

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="38" viewBox="0 0 70 38">
+  <defs>
+    <clipPath id="clip-video_1">
+      <rect width="70" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="video_1" data-name="video – 1" clip-path="url(#clip-video_1)">
+    <g id="streamline-icon-video-file-play_140x140" data-name="streamline-icon-video-file-play@140x140" transform="translate(9.417 3.083)">
+      <path id="Path_135" data-name="Path 135" d="M35.73,7.438a1.13,1.13,0,0,1,.331.8V27.786a1.13,1.13,0,0,1-1.13,1.13H15.714a1.13,1.13,0,0,1-1.13-1.13V4.047a1.13,1.13,0,0,1,1.13-1.13H30.741a1.13,1.13,0,0,1,.8.331Z" transform="translate(0 0)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_136" data-name="Path 136" d="M51.263,46.809a1.13,1.13,0,0,0-1.68.988v8.478a1.13,1.13,0,0,0,1.68.988l7.348-4.522a1.13,1.13,0,0,0,0-1.976Z" transform="translate(-28.217 -35.272)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

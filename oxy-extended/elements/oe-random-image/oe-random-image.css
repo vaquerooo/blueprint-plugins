@@ -1,0 +1,43 @@
+.oe-random-image-container {
+    text-align: center;
+}
+.oe-random-image-wrap {
+    position:relative;
+    display:inline-block;
+}
+.oe-media-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    -webkit-transition: all 0.25s linear 0s;
+    transition: all 0.25s linear 0s; 
+}
+.oe-random-image-wrap .oe-random-image {
+    display: inline-block;
+    vertical-align: middle;
+	width: 100%;
+}
+.oe-random-image-wrap .oe-media-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.oe-random-image-caption-over .oe-media-content,
+.oe-random-image-link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.oe-random-image-figure {
+    margin: 0;
+}

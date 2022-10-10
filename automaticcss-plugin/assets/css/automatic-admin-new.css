@@ -1,0 +1,469 @@
+/* For comfortable workspace */
+html {
+    font-family: "DM Sans";
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+}
+
+/* Global Important */
+
+:root {
+    --acss-settings-black: #000;
+    --acss-settings-white: #fff;
+    --acss-settings-gray: #f2f2f2;
+    --acss-settings-gray-dark: #dadada;
+    --acss-settings-gray-light: #e5e5e5;
+    --acss-settings-gray-medium: #333333;
+    --acss-settings-false: #ff272a;
+    --acss-settings-true: #0add08;
+}
+
+.specialClass {
+    background-color: red;
+}
+
+.disable-scroll {
+    height: calc((100vh)+1000px);
+    overflow: hidden;
+}
+
+/*App container*/
+
+.acss-wrapper {
+    background-color: var(--acss-settings-black);
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.acss-plugin {
+    background-color: var(--acss-settings-white);
+    width: 100%;
+    max-width: 80rem;
+    display: grid;
+    grid-template-columns: 13rem auto;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.acss-nav-wrapper {
+    background-color: var(--acss-settings-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Tab  */
+
+.acss-tab-wrapper {
+    padding: 4rem 6rem;
+}
+
+.acss-tab__heading {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2rem;
+}
+
+.acss-tab__description {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    margin-top: 1.6rem;
+}
+
+/* Panel */
+
+.acss-panel {
+    width: 100%;
+    padding: 1.4rem 2rem 1.8rem 2rem;
+    background-color: var(--acss-settings-gray);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.acss-panel__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.acss-header__content {
+    flex-grow: 1;
+    padding-right: 2rem;
+    max-width: 30rem;
+}
+
+.acss-panel:first-of-type {
+    margin-top: 0;
+}
+
+.acss-panel__heading {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+}
+
+.acss-panel__description {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Variable Element */
+
+.acss-var-wrapper {
+    background-color: var(--acss-settings-gray-light);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+
+.acss-var__heading {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-right: auto;
+    text-transform: capitalize;
+}
+
+.acss-var__value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+    position: relative;
+}
+
+/* Input and Related Unit  */
+
+.acss-value__input-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.acss-value__input {
+    padding: 1rem;
+    border: none;
+    background-color: var(--acss-settings-black);
+    color: var(--acss-settings-white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 1rem 0 0 1rem;
+    width: 1ch;
+    max-width: 30ch;
+    text-align: center;
+}
+
+.acss-value__unit {
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: var(--acss-settings-gray-medium);
+    color: var(--acss-settings-white);
+    border-radius: 0 1rem 1rem 0;
+}
+
+.acss-value__reset-button {
+    margin-left: 1rem;
+    height: 1.4rem;
+}
+
+/*Tool Tip*/
+
+.acss-value__tooltip {
+    visibility: hidden;
+    position: absolute;
+    z-index: 10;
+    background-color: var(--acss-settings-gray-medium);
+    color: var(--acss-settings-white);
+    right: 0.5rem;
+    top: -0.5rem;
+    transform: translateY(-100%);
+    padding: 1.5rem;
+    border-radius: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 52px 21px rgba(0, 0, 0, 0.01),
+        0px 29px 18px rgba(0, 0, 0, 0.05), 0px 13px 13px rgba(0, 0, 0, 0.09),
+        0px 3px 7px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.acss-value__tooltip p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--acss-settings-white);
+    margin-right: 1rem;
+}
+
+.acss-tooltip__accept {
+    border: none;
+    padding: 0;
+    font-size: 2.5rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.acss-value__reset-button.tooltip-active+.acss-value__tooltip {
+    visibility: visible;
+}
+
+.rotate-reset {
+    -webkit-animation-name: rotateAnimation;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes rotateAnimation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+/* Input Variations  */
+
+/* Number Input  */
+
+.acss-value__input--number {
+    width: 6ch;
+    max-width: 8ch;
+}
+
+/* Hide number input arrow */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Color Picker Input */
+
+.acss-value__input--color {
+    padding-left: 0rem;
+    padding-right: 2rem;
+}
+
+/* Accordion */
+
+.acss-accordion {
+    background-color: var(--acss-settings-gray-dark);
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.acss-accordion__header {
+    display: flex;
+    padding: 2rem 0;
+    width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.acss-accordion__heading {
+    font-size: 1.4rem;
+    padding-left: 2rem;
+}
+
+.acc--open .acss-accordion__icon {
+    transform: rotate(180deg);
+    padding-left: 2rem;
+}
+
+.acss-accordion__icon {
+    padding-right: 2rem;
+}
+
+.acss-accordion__content__description {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.acss-accordion__content {
+    padding: 2rem;
+    padding-top: 0;
+}
+
+.acss-accordion__content-wrapper {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 350ms ease-in-out;
+}
+
+/* Select dropdown menu */
+
+.acss-value__input--dropdown {
+    color: white;
+    background-color: var(--acss-settings-black);
+    padding: 1rem 6rem 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+
+    /* reset */
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: linear-gradient(45deg,
+            transparent 50%,
+            var(--acss-settings-white) 50%),
+        linear-gradient(135deg, var(--acss-settings-white) 50%, transparent 50%),
+        linear-gradient(to right,
+            var(--acss-settings-gray-medium),
+            var(--acss-settings-gray-medium));
+    background-position: calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px), 100% 0;
+    background-size: 0.5rem 0.5rem, 0.5rem 0.5rem, 2.5em 2.5em;
+    background-repeat: no-repeat;
+}
+
+/*Toggle*/
+
+.radio-switch {
+    border: none;
+    padding: 0;
+    white-space: nowrap;
+}
+
+/*
+	relative labels to help position the pseudo elements
+	the z-index will be handy later, when the labels that
+	overlap the visual switch UI need to be adjusted
+	to allow for a user to toggle the switch without
+	having to move their mouse/finger to the different
+	sides of the UI
+*/
+.radio-switch label {
+    display: inline-block;
+    line-height: 2;
+    position: relative;
+    z-index: 2;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/*
+	inputs set to opcacity 0 are still accessible.
+	Apparently there can be issues targetting inputs with
+	Dragon speech recognition software if you use the typical
+	'visually-hidden' class...so might as well just avoid that issue...
+*/
+.radio-switch input {
+    opacity: 0;
+    position: absolute;
+}
+
+/*
+	a 2 option toggle can only have 2 options...so instead of
+	adding more classes, i'm just going to use some
+	structural pseudo-classes to target them...
+	cause why let all that good work go to waste?!
+
+  the large padding is used to position the labels
+  on top of the visual UI, so the switch UI itself
+  can be mouse clicked or finger tapped to toggle
+  the current option
+*/
+.radio-switch label:first-of-type {
+    padding-right: 5em;
+}
+
+.radio-switch label:last-child {
+    margin-left: -4.25em;
+    padding-left: 5em;
+}
+
+/*
+	oh focus within, I can't wait for you to have even more support.
+	But you'll never be in IE11, so we're going to need a
+	polyfill for you for a bit...
+ */
+
+/* making the switch UI.  */
+.radio-switch label:first-of-type:before,
+.radio-switch label:first-of-type:after {
+    content: "";
+    height: 2.2em;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    vertical-align: middle;
+}
+
+.radio-switch label:first-of-type:before {
+    background: var(--acss-settings-false);
+    border-radius: 1rem;
+    position: absolute;
+    right: 0em;
+    transform: translateX(0em);
+    transition: transform 0.2s ease-in-out;
+    width: 2.2em;
+    height: 2.2em;
+    z-index: 2;
+}
+
+.radio-switch label:first-of-type:after {
+    background: var(--acss-settings-gray-medium);
+    border-radius: 1rem;
+    margin: 0 1em;
+    transition: background 0.2s ease-in-out;
+    width: 4em;
+}
+
+/*
+	Visually change the switch UI to match the
+	checked state of the first radio button
+*/
+.radio-switch input:first-of-type:checked~label:first-of-type:after {
+    background: var(--acss-settings-gray-medium);
+}
+
+.radio-switch input:first-of-type:checked~label:first-of-type:before {
+    transform: translateX(-2em);
+    background: var(--acss-settings-true);
+}
+
+/* Move the 2nd label to have a lower z-index, so when that
+   option is toggled, the first label will overlay on top of the
+   Switch ui, and the switch can be pressed again to toggle back
+   to the prevoius state. */
+.radio-switch input:last-of-type:checked~label:last-of-type {
+    z-index: 1;
+}

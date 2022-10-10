@@ -1,0 +1,37 @@
+.oxy-oe-instagram-feed {
+	width: 100%;
+}
+.oe-instagram-feed .oe-if-img img {
+	vertical-align: middle;
+	width: 100%;
+}
+.oe-grid.swiper-wrapper {
+    flex-wrap: nowrap;
+}
+.oe-instagram-feed .oe-grid-item img {
+    -webkit-filter: none;
+    filter: none;
+    vertical-align: middle;
+}
+.oe-instagram-feed .oe-grid-item:hover img {
+    -webkit-filter: none;
+    filter: none;
+}
+.oe-instagram-feed-gray .oe-grid-item img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: filter 0.25s linear 0s;
+    -webkit-transition: -webkit-filter 0.25s linear 0s;
+    transition: -webkit-filter 0.25s linear 0s;
+    transition: filter 0.25s linear 0s;
+    transition: filter 0.25s linear 0s, -webkit-filter 0.25s linear 0s;
+}
+.oe-instagram-feed-hover-gray .oe-grid-item:hover img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: filter 0.25s linear 0s;
+    -webkit-transition: -webkit-filter 0.25s linear 0s;
+    transition: -webkit-filter 0.25s linear 0s;
+    transition: filter 0.25s linear 0s;
+    transition: filter 0.25s linear 0s, -webkit-filter 0.25s linear 0s;
+}

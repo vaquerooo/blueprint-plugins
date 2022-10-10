@@ -1,0 +1,77 @@
+// CHANGES HERE MUST BE MADE IN CERTAIN PLATFORMS AS WELL!
+
+@include if-builders-off {
+  @each $direction, $value in $flexDirections {
+    .flex--#{$direction} {
+      display: flex;
+      flex-direction: #{$value};
+    }
+  }
+
+  // Flex Breakpoints
+  @include breakpoint(xl) {
+    @each $direction, $value in $flexDirections {
+      .flex--#{$direction}-xl {
+        display: flex;
+        flex-direction: #{$value};
+      }
+    }
+  }
+
+  @include breakpoint(l) {
+    @each $direction, $value in $flexDirections {
+      .flex--#{$direction}-l {
+        display: flex;
+        flex-direction: #{$value};
+      }
+    }
+  }
+
+  @include breakpoint(m) {
+    @each $direction, $value in $flexDirections {
+      .flex--#{$direction}-m {
+        display: flex;
+        flex-direction: #{$value};
+      }
+    }
+  }
+
+  @include breakpoint(s) {
+    @each $direction, $value in $flexDirections {
+      .flex--#{$direction}-s {
+        display: flex;
+        flex-direction: #{$value};
+      }
+    }
+  }
+
+  // GERNERATE ALIGNMENTS
+
+  @each $alignmentType, $directionSet in $alignments {
+    @each $direction, $value in $directionSet {
+      @if $alignmentType != self {
+        .#{$alignmentType}--#{$direction} {
+          display: flex;
+          #{$alignmentType}: $value;
+        }
+      } @else if $alignmentType == self {
+        .#{$alignmentType}--#{$direction} {
+          display: flex;
+          align-self: $value;
+        }
+      }
+    }
+  }
+
+  .stretch {
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: stretch;
+    justify-items: stretch;
+  }
+
+  .flex--wrap {
+    flex-wrap: wrap;
+  }
+}

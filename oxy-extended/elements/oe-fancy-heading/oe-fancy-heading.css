@@ -1,0 +1,49 @@
+/**
+ * Animation - Fancy Heading 
+ */
+
+@-webkit-keyframes oe-fancy-heading-hue {
+	from {
+		-webkit-filter: hue-rotate(0deg);
+	}
+	to {
+		-webkit-filter: hue-rotate(-360deg);
+	}
+}
+
+@keyframes oe-fancy-heading-hue {
+	from {
+		-webkit-filter: hue-rotate(0deg);
+	}
+	to {
+		-webkit-filter: hue-rotate(-360deg);
+	}
+}
+
+@-webkit-keyframes oe-fancy-heading-fade {
+	0%,100% { opacity: 0 }
+	50% { opacity: 1 }
+}
+
+@keyframes oe-fancy-heading-fade {
+	0%,100% { opacity: 0 }
+	50% { opacity: 1 }
+}
+
+@-webkit-keyframes oe-fancy-heading-rotate {
+	from {
+		-webkit-transform: rotateY(0deg);
+	}
+	to {
+		-webkit-transform: rotateY(360deg);
+	}
+}
+
+@keyframes oe-fancy-heading-rotate {
+	from {
+		transform: rotateY(0deg);
+	}
+	to {
+		transform: rotateY(360deg);
+	}
+}

@@ -1,0 +1,34 @@
+@each $colorName, $colorSet in $colors {
+  @each $colorName, $colorValue in $colorSet {
+    .link--#{$colorName} a,
+    a.link--#{$colorName} {
+      color: $colorValue;
+
+      @if str-index(#{$colorName}, "primary") {
+        &:hover {
+          color: var(--primary-hover);
+        }
+      }
+      @if str-index(#{$colorName}, "secondary") {
+        &:hover {
+          color: var(--secondary-hover);
+        }
+      }
+      @if str-index(#{$colorName}, "accent") {
+        &:hover {
+          color: var(--accent-hover);
+        }
+      }
+      @if str-index(#{$colorName}, "base") {
+        &:hover {
+          color: var(--base-hover);
+        }
+      }
+      @if str-index(#{$colorName}, "shade") {
+        &:hover {
+          color: var(--shade-hover);
+        }
+      }
+    }
+  }
+}

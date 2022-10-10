@@ -1,0 +1,64 @@
+:root {
+  // COLOR VARIABLES
+  @each $colorName, $colorSet in $allColors {
+    @each $colorName, $colorValue in $colorSet {
+      --#{$colorName}: #{$colorValue};
+    }
+  }
+  --shade-white: #fff;
+  --shade-black: #000;
+
+  // TEXT SIZE VARIABLES
+  @each $variable, $value in $textVariables {
+    --#{$variable}: #{$value};
+  }
+  // HEADING SIZE VARIABLES
+  @each $variable, $value in $headingVariables {
+    --#{$variable}: #{$value};
+  }
+  // SPACING VARIABLES
+  @each $variable, $value in $spacingVariables {
+    --#{$variable}: #{$value};
+  }
+  // SECTION SPACING VARIABLES
+  @each $variable, $value in $sectionSpacingVariables {
+    --#{$variable}: #{$value};
+  }
+  // WIDTH VARIABLES
+  @each $width, $value in $widths {
+    --width-#{$width}: #{$value};
+  }
+  // RADIUS VARIABLES
+  @each $radius, $value in $radius {
+    --radius-#{$radius}: #{$value};
+  }
+
+  // Dashboard Variables
+  --section-padding-x: #{$section-padding-x-rem};
+  --section-gutter: #{$section-padding-x-rem};
+  --btn-border-size: #{$btn-border-size};
+  --outline-btn-border-size: #{$outline-btn-border-size};
+  --btn-pad-y: #{$btn-pad-y};
+  --btn-pad-x: #{$btn-pad-x};
+  --btn-radius: #{$btn-radius};
+
+  // Color Variable Partials
+  --primary-h: #{$primary-h};
+  --primary-s: #{$primary-s};
+  --primary-l: #{$primary-l};
+  --secondary-h: #{$secondary-h};
+  --secondary-s: #{$secondary-s};
+  --secondary-l: #{$secondary-l};
+  --accent-h: #{$accent-h};
+  --accent-s: #{$accent-s};
+  --accent-l: #{$accent-l};
+  --base-h: #{$base-h};
+  --base-s: #{$base-s};
+  --base-l: #{$base-l};
+  --shade-h: #{$shade-h};
+  --shade-s: #{$shade-s};
+  --shade-l: #{$shade-l};
+
+  // Other Variables
+  --header-height: #{$header-height};
+}

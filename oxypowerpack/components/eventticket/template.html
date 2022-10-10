@@ -1,0 +1,22 @@
+<div class="oxyPowerPack-ticket --flex-column">
+	<div class="top --flex-column">
+		<div class="bandname -bold" OXY_EDITABLE(event_title|The Oxygeners)>%%event_title%%</div>
+		<div class="tourname" OXY_EDITABLE(event_subtitle|World Tour)>%%event_subtitle%%</div>
+		<div class="img" style="background-image:url(%%event_image%%);"></div>
+		<div class="deetz --flex-row-j!sb">
+			<div class="event --flex-column">
+				<div class="date" OXY_EDITABLE(event_date|March 2nd 2020)>%%event_date%%</div>
+				<div class="location -bold" OXY_EDITABLE(event_location|Monterrey, Mexico)>%%event_location%%</div>
+			</div>
+			<div class="price --flex-column">
+				<div class="label" OXY_EDITABLE(event_price_label|Price)>%%event_price_label%%</div>
+				<div class="cost -bold" OXY_EDITABLE(event_price|$99)>%%event_price%%</div>
+			</div>
+		</div>
+	</div>
+	<div class="rip"></div>
+	<div class="bottom --flex-row-j!sb">
+		<div class="barcode"></div>
+		<a class="buy" href="%%button_url%%" OXY_EDITABLE(event_button_text|BUY TICKET)>%%event_button_text%%</a>
+	</div>
+</div>

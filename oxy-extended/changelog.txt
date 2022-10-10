@@ -1,0 +1,7 @@
+== 1.1.0 ==
+Release date: September 15, 2021
+* New: Image Gallery element
+
+== 1.0.0 ==
+Release date: April 7, 2021
+* Initial Release

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="38" viewBox="0 0 70 38">
+  <defs>
+    <clipPath id="clip-image-hotspot_1">
+      <rect width="70" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="image-hotspot_1" data-name="image-hotspot – 1" clip-path="url(#clip-image-hotspot_1)">
+    <g id="streamline-icon-messages-bubble-square-image_140x140" data-name="streamline-icon-messages-bubble-square-image@140x140" transform="translate(21 6)">
+      <path id="Path_35" data-name="Path 35" d="M31.393,28.56A1.238,1.238,0,0,1,30.155,29.8H16.536L11.583,34.75V29.8H4.155A1.238,1.238,0,0,1,2.917,28.56V9.988A1.238,1.238,0,0,1,4.155,8.75h26a1.238,1.238,0,0,1,1.238,1.238Z" transform="translate(-2.917 -8.75)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_36" data-name="Path 36" d="M40.833,63.908l3.035-3.9a1.238,1.238,0,0,1,1.576-.255l2.2,1.68,2.059-2.65a1.238,1.238,0,0,1,1.965.083l3.4,5.043Z" transform="translate(-32.786 -47.812)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_37" data-name="Path 37" d="M40.851,33.94a1.857,1.857,0,1,0,1.857-1.857A1.857,1.857,0,0,0,40.851,33.94Z" transform="translate(-32.799 -27.131)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

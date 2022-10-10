@@ -1,0 +1,20 @@
+(function(){
+    var currentPowerMapScript = document.currentScript;
+    jQuery(document).ready(function(){
+        oxy_setup_powermap(
+            currentPowerMapScript,
+            '%%ELEMENT_ID%%',
+            '%%base_map%%',
+            window.oxypowerpack_mapbox_key,
+            '%%map_lng%%',
+            '%%map_lat%%',
+            '%%map_zoom%%',
+            '%%interactive%%',
+            '%%map_pitch%%',
+            '%%map_bearing%%',
+            '%%3d_buildings%%',
+            '%%geojson%%',
+            '%%slowfly%%'
+        )
+    });
+})();

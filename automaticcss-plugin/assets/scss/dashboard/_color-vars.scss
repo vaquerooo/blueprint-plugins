@@ -1,0 +1,112 @@
+// DEFAULT
+
+$body-color: null !default;
+$body-bg-color: var(--white) !default;
+$h1-color: null !default;
+$h2-color: null !default;
+$h3-color: null !default;
+$h4-color: null !default;
+$h5-color: null !default;
+$h6-color: null !default;
+
+// PRIMARY
+$primary-h: 358 !default;
+$primary-s: 70% !default;
+$primary-l: 66% !default;
+$primary-hover-s: 70% !default;
+$primary-hover-l: 1.15 !default;
+$primary-ultra-light-s: 70% !default;
+$primary-ultra-light-l: 95% !default;
+$primary-light-s: 70% !default;
+$primary-light-l: 85% !default;
+$primary-medium-s: 70% !default;
+$primary-medium-l: 50% !default;
+$primary-dark-s: 70% !default;
+$primary-dark-l: 25% !default;
+$primary-ultra-dark-s: 70% !default;
+$primary-ultra-dark-l: 10% !default;
+
+// SECONDARY
+$secondary-h: 276 !default;
+$secondary-s: 16% !default;
+$secondary-l: 41% !default;
+$secondary-hover-s: 16% !default;
+$secondary-hover-l: 1.15 !default;
+$secondary-ultra-light-s: 16% !default;
+$secondary-ultra-light-l: 95% !default;
+$secondary-light-s: 16% !default;
+$secondary-light-l: 85% !default;
+$secondary-medium-s: 16% !default;
+$secondary-medium-l: 50% !default;
+$secondary-dark-s: 16% !default;
+$secondary-dark-l: 25% !default;
+$secondary-ultra-dark-s: 16% !default;
+$secondary-ultra-dark-l: 10% !default;
+
+// ACCENT
+$accent-h: 21 !default;
+$accent-s: 69% !default;
+$accent-l: 73% !default;
+$accent-hover-s: 69% !default;
+$accent-hover-l: 1.15 !default;
+$accent-ultra-light-s: 69% !default;
+$accent-ultra-light-l: 95% !default;
+$accent-light-s: 69% !default;
+$accent-light-l: 85% !default;
+$accent-medium-s: 69% !default;
+$accent-medium-l: 50% !default;
+$accent-dark-s: 69% !default;
+$accent-dark-l: 25% !default;
+$accent-ultra-dark-s: 69% !default;
+$accent-ultra-dark-l: 10% !default;
+
+// BASE
+$base-h: 213 !default;
+$base-s: 36% !default;
+$base-l: 32% !default;
+$base-hover-s: 36% !default;
+$base-hover-l: 1.15 !default;
+$base-ultra-light-s: 36% !default;
+$base-ultra-light-l: 95% !default;
+$base-light-s: 36% !default;
+$base-light-l: 85% !default;
+$base-medium-s: 36% !default;
+$base-medium-l: 50% !default;
+$base-dark-s: 36% !default;
+$base-dark-l: 25% !default;
+$base-ultra-dark-s: 36% !default;
+$base-ultra-dark-l: 10% !default;
+
+// SHADE
+$shade-h: 0 !default;
+$shade-s: 0% !default;
+$shade-l: 0% !default;
+$shade-hover-s: 0% !default;
+$shade-hover-l: 1.15 !default;
+$shade-ultra-light-s: 0% !default;
+$shade-ultra-light-l: 95% !default;
+$shade-light-s: 0% !default;
+$shade-light-l: 85% !default;
+$shade-medium-s: 0% !default;
+$shade-medium-l: 50% !default;
+$shade-dark-s: 0% !default;
+$shade-dark-l: 25% !default;
+$shade-ultra-dark-s: 0% !default;
+$shade-ultra-dark-l: 10% !default;
+
+// FOR VARIABLES
+
+// $primary-s-var: percent($primary-s);
+// $primary-l-var: percent($primary-l);
+
+// $secondary-s-var: percent($secondary-s);
+// $secondary-l-var: percent($secondary-l);
+
+// $accent-s-var: percent($accent-s);
+// $accent-l-var: percent($accent-l);
+
+// $base-s-var: percent($base-s);
+// $base-l-var: percent($base-l);
+
+// $shade-s-var: percent($shade-s);
+// $shade-l-var: percent($shade-l);

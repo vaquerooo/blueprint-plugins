@@ -1,0 +1,26 @@
+@include if-builders-off {
+  @include breakpoint-up(xl) {
+    @each $breakout, $breakoutValue in $breakouts {
+      $breakoutMath: vw($breakoutValue / 2);
+
+      .breakout--#{$breakout} {
+        width: vw($breakoutValue);
+        max-width: vw($breakoutValue) !important;
+        margin: 0 calc(-#{$breakoutMath} + 50%);
+      }
+    }
+  }
+  .breakout--full {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    align-self: flex-start;
+  }
+  @include breakpoint(xl) {
+    [class*="breakout--"]:not(.breakout--full) {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin: 0;
+    }
+  }
+}

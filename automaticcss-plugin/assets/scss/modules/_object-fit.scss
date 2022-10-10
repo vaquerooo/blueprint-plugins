@@ -1,0 +1,40 @@
+.object-fit--cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.object-fit--contain {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.object-fit--top-left {
+  -o-object-position: 10% 90%;
+  object-position: 10% 90%;
+}
+.object-fit--top-center {
+  -o-object-position: 50% 10%;
+  object-position: 50% 10%;
+}
+.object-fit--top-right {
+  -o-object-position: 90% 10%;
+  object-position: 90% 10%;
+}
+.object-fit--center-left {
+  -o-object-position: 10% 50%;
+  object-position: 10% 50%;
+}
+.object-fit--center-right {
+  -o-object-position: 90% 50%;
+  object-position: 90% 50%;
+}
+.object-fit--bottom-left {
+  -o-object-position: 90% 10%;
+  object-position: 90% 10%;
+}
+.object-fit--bottom-center {
+  -o-object-position: 50% 90%;
+  object-position: 50% 90%;
+}
+.object-fit--bottom-right {
+  -o-object-position: 90% 90%;
+  object-position: 90% 90%;
+}

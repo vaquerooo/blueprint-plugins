@@ -1,0 +1,12 @@
+.oxy-countdown-timer {
+    text-align: center;
+}
+.oxy-countdown-timer div.segment {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 1em;
+}
+.oxy-countdown-timer div.segment span.number {
+    display: block;
+    font-size: 4.5rem;
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="icon-beforeafter-active.svg"
+   xml:space="preserve"
+   style="enable-background:new 0 0 70 38.6;"
+   viewBox="0 0 70 38.6"
+   y="0px"
+   x="0px"
+   id="Layer_1"
+   version="1.1"><metadata
+   id="metadata23"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs21" /><sodipodi:namedview
+   inkscape:current-layer="g16"
+   inkscape:window-maximized="0"
+   inkscape:window-y="69"
+   inkscape:window-x="51"
+   inkscape:cy="13.745438"
+   inkscape:cx="39.469093"
+   inkscape:zoom="15.657143"
+   showgrid="false"
+   id="namedview19"
+   inkscape:window-height="943"
+   inkscape:window-width="1727"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+<style
+   id="style10"
+   type="text/css">
+	.st0{fill:#4E555B;}
+	.st1{fill:#386689;}
+	.st2{fill:#414950;}
+	.st3{fill:#707980;}
+	.st4{fill:#484F56;}
+	.st5{fill:#70797F;}
+	.st6{fill:#577E9C;}
+	.st7{fill:#4D5860;}
+	.st8{fill:#424C53;}
+	.st9{fill:#60676E;}
+	.st10{fill:#60666B;}
+	.st11{fill:#434A51;}
+	.st12{fill:#565C62;}
+	.st13{fill:#5E6469;}
+	.st14{fill:#485056;}
+	.st15{fill:#787F86;}
+</style>
+<g
+   id="g16">
+	<path
+   style="fill:#386689;fill-opacity:1"
+   id="path12"
+   d="M50.6,6.1H19.4c-3.2,0-5.7,2.6-5.7,5.7v15.1c0,3.2,2.6,5.7,5.7,5.7h31.1c3.2,0,5.7-2.6,5.7-5.7V11.8   C56.3,8.6,53.7,6.1,50.6,6.1z M52.2,26.8c0,0.9-0.8,1.7-1.7,1.7H19.4c-0.9,0-1.7-0.8-1.7-1.7V11.8c0-0.9,0.8-1.7,1.7-1.7h31.1   c0.9,0,1.7,0.8,1.7,1.7V26.8z"
+   class="st2" />
+	
+<rect
+   y="3.1484923"
+   x="33.083942"
+   height="32.170853"
+   width="3.7043796"
+   id="rect848"
+   style="fill:#386689;fill-opacity:1;fill-rule:evenodd;stroke-width:1.06153" /><text
+   id="text852"
+   y="25.164232"
+   x="21.523724"
+   style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#386689;fill-opacity:1;stroke:none;opacity:1;"
+   xml:space="preserve"><tspan
+     style="font-size:16px;fill:#386689;fill-opacity:1;"
+     y="25.164232"
+     x="21.523724"
+     id="tspan850"
+     sodipodi:role="line">A B</tspan></text></g>
+</svg>

@@ -1,0 +1,26 @@
+.oxypowerpack{
+  &.settings{
+    display:block;
+    label{
+      margin: 0 !important;
+    }
+    .form-group{
+      margin-bottom:8px;
+    }
+    h2{
+      small{
+        display: block;
+      }
+    }
+
+    form{
+      .row:hover{
+        background-color: white;
+      }
+
+    }
+
+    @import "toggle-input";
+
+  }
+}

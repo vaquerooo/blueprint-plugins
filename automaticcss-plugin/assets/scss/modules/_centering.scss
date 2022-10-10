@@ -1,0 +1,239 @@
+$centering-extensions: --all, --y, --x, --left, --right;
+
+@mixin center-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin center-x {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center-y {
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin center-left {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+@mixin center-right {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@mixin center-top {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin center-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.center--all:not(.ct-section),
+.ct-section.center--all > .ct-section-inner-wrap {
+  @include center-all;
+}
+
+.center--y:not(.ct-section),
+.ct-section.center--y > .ct-section-inner-wrap {
+  @include center-y;
+}
+
+.center--x:not(.ct-section),
+.ct-section.center--x > .ct-section-inner-wrap {
+  @include center-x;
+}
+
+.center--left:not(.ct-section),
+.ct-section.center--left > .ct-section-inner-wrap {
+  @include center-left;
+}
+
+.center--right:not(.ct-section),
+.ct-section.center--right > .ct-section-inner-wrap {
+  @include center-right;
+}
+
+.center--top:not(.ct-section),
+.ct-section.center--top > .ct-section-inner-wrap {
+  @include center-top;
+}
+
+.center--bottom:not(.ct-section),
+.ct-section.center--bottom > .ct-section-inner-wrap {
+  @include center-bottom;
+}
+
+@include breakpoint(xl) {
+  .center--all-xl:not(.ct-section),
+  .ct-section.center--all-xl > .ct-section-inner-wrap {
+    @include center-all;
+  }
+  .center--y-xl:not(.ct-section),
+  .ct-section.center--y-xl > .ct-section-inner-wrap {
+    @include center-y;
+  }
+
+  .center--x-xl:not(.ct-section),
+  .ct-section.center--x-xl > .ct-section-inner-wrap {
+    @include center-x;
+  }
+
+  .center--left-xl:not(.ct-section),
+  .ct-section.center--left-xl > .ct-section-inner-wrap {
+    @include center-left;
+  }
+
+  .center--right-xl:not(.ct-section),
+  .ct-section.center--right-xl > .ct-section-inner-wrap {
+    @include center-right;
+  }
+  .center--top:not(.ct-section),
+  .ct-section.center--top > .ct-section-inner-wrap {
+    @include center-top;
+  }
+
+  .center--bottom:not(.ct-section),
+  .ct-section.center--bottom > .ct-section-inner-wrap {
+    @include center-bottom;
+  }
+}
+
+@include breakpoint(l) {
+  .center--all-l:not(.ct-section),
+  .ct-section.center--all-l > .ct-section-inner-wrap {
+    @include center-all;
+  }
+  .center--y-l:not(.ct-section),
+  .ct-section.center--y-l > .ct-section-inner-wrap {
+    @include center-y;
+  }
+
+  .center--x-l:not(.ct-section),
+  .ct-section.center--x-l > .ct-section-inner-wrap {
+    @include center-x;
+  }
+
+  .center--left-l:not(.ct-section),
+  .ct-section.center--left-l > .ct-section-inner-wrap {
+    @include center-left;
+  }
+
+  .center--right-l:not(.ct-section),
+  .ct-section.center--right-l > .ct-section-inner-wrap {
+    @include center-right;
+  }
+  .center--top:not(.ct-section),
+  .ct-section.center--top > .ct-section-inner-wrap {
+    @include center-top;
+  }
+
+  .center--bottom:not(.ct-section),
+  .ct-section.center--bottom > .ct-section-inner-wrap {
+    @include center-bottom;
+  }
+}
+
+@include breakpoint(m) {
+  .center--all-m:not(.ct-section),
+  .ct-section.center--all-m > .ct-section-inner-wrap {
+    @include center-all;
+  }
+  .center--y-m:not(.ct-section),
+  .ct-section.center--y-m > .ct-section-inner-wrap {
+    @include center-y;
+  }
+
+  .center--x-m:not(.ct-section),
+  .ct-section.center--x-m > .ct-section-inner-wrap {
+    @include center-x;
+  }
+
+  .center--left-m:not(.ct-section),
+  .ct-section.center--left-m > .ct-section-inner-wrap {
+    @include center-left;
+  }
+
+  .center--right-m:not(.ct-section),
+  .ct-section.center--right-m > .ct-section-inner-wrap {
+    @include center-right;
+  }
+  .center--top:not(.ct-section),
+  .ct-section.center--top > .ct-section-inner-wrap {
+    @include center-top;
+  }
+
+  .center--bottom:not(.ct-section),
+  .ct-section.center--bottom > .ct-section-inner-wrap {
+    @include center-bottom;
+  }
+}
+
+@include breakpoint(s) {
+  .center--all-s:not(.ct-section),
+  .ct-section.center--all-s > .ct-section-inner-wrap {
+    @include center-all;
+  }
+  .center--y-s:not(.ct-section),
+  .ct-section.center--y-s > .ct-section-inner-wrap {
+    @include center-y;
+  }
+
+  .center--x-s:not(.ct-section),
+  .ct-section.center--x-s > .ct-section-inner-wrap {
+    @include center-x;
+  }
+
+  .center--left-s:not(.ct-section),
+  .ct-section.center--left-s > .ct-section-inner-wrap {
+    @include center-left;
+  }
+
+  .center--right-s:not(.ct-section),
+  .ct-section.center--right-s > .ct-section-inner-wrap {
+    @include center-right;
+  }
+  .center--top:not(.ct-section),
+  .ct-section.center--top > .ct-section-inner-wrap {
+    @include center-top;
+  }
+
+  .center--bottom:not(.ct-section),
+  .ct-section.center--bottom > .ct-section-inner-wrap {
+    @include center-bottom;
+  }
+}
+
+.center--self {
+  margin-left: auto;
+  margin-right: auto;
+}

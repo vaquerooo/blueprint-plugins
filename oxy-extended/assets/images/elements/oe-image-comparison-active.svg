@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="38" viewBox="0 0 70 38">
+  <defs>
+    <clipPath id="clip-image-comparision_1">
+      <rect width="70" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="image-comparision_1" data-name="image-comparision – 1" clip-path="url(#clip-image-comparision_1)">
+    <g id="Group_1130" data-name="Group 1130" transform="translate(17 6)">
+      <g id="streamline-icon-common-file-horizontal-image_140x140" data-name="streamline-icon-common-file-horizontal-image@140x140" transform="translate(0 0)">
+        <path id="Path_13" data-name="Path 13" d="M37.917,76.885l3.747-4.819a1.529,1.529,0,0,1,1.948-.315l2.716,2.075,2.543-3.273a1.529,1.529,0,0,1,2.427.1L55.5,76.885Z" transform="translate(-28.74 -57.003)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_14" data-name="Path 14" d="M37.917,46.044a2.294,2.294,0,1,0,2.294-2.294A2.294,2.294,0,0,0,37.917,46.044Z" transform="translate(-28.74 -37.632)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Path_15" data-name="Path 15" d="M31.975,20.865a1.529,1.529,0,0,0-1.081-.448H4.446a1.529,1.529,0,0,0-1.529,1.529V44.887a1.529,1.529,0,0,0,1.529,1.529H36.564a1.529,1.529,0,0,0,1.529-1.529V27.616a1.529,1.529,0,0,0-.448-1.081Z" transform="translate(-2.917 -20.417)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <line id="Line_1" data-name="Line 1" y2="25.352" transform="translate(17.42 0.324)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

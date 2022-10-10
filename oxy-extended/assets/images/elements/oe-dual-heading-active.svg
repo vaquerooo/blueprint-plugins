@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="38" viewBox="0 0 70 38">
+  <defs>
+    <clipPath id="clip-dual-heading_1">
+      <rect width="70" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="dual-heading_1" data-name="dual-heading – 1" clip-path="url(#clip-dual-heading_1)">
+    <g id="streamline-icon-font-size_140x140" data-name="streamline-icon-font-size@140x140" transform="translate(17.083 -7.265)">
+      <path id="Path_23" data-name="Path 23" d="M30.352,39.265,21.629,13.717a.668.668,0,0,0-1.265,0l-8.7,25.548" transform="translate(-6.745)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_24" data-name="Path 24" d="M25.567,85.9H37.874" transform="translate(-17.46 -55.987)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_25" data-name="Path 25" d="M2.917,126.729H6.953" transform="translate(0 -87.464)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_26" data-name="Path 26" d="M84.461,126.729H88.5" transform="translate(-62.858 -87.464)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_27" data-name="Path 27" d="M99.967,70.9,94.456,54.755a.668.668,0,0,0-1.265,0l-2.524,7.409" transform="translate(-67.643 -31.634)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_28" data-name="Path 28" d="M98.7,97.562h5.178" transform="translate(-73.835 -64.98)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_29" data-name="Path 29" d="M125.51,126.729h2.652" transform="translate(-94.501 -87.464)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,195 @@
+body.oxygen-builder-body .oxy-oe-gallery-slider {
+    display: block;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+.oe-gallery-slider-wrapper {
+	position: relative;
+    width: 100%;
+}
+
+.oe-gallery-slider {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.oe-gallery-slider-content {
+    position: relative;
+    text-align: center;
+	overflow: hidden;
+}
+
+.oe-gallery-slider-content {
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+
+.oxy-oe-gallery-slider .swiper-slide {
+    line-height: 0;
+}
+
+.oe-gallery-slider .oe-gallery-slider-image-container {
+	background: no-repeat 50%;
+    background-size: cover;
+    position: relative;
+    display: inline-block;
+	vertical-align: middle;
+    width: 100%;
+}
+
+.oe-gallery-slider .oegsld-img {
+    height: 250px;
+}
+
+.swiper-container-multirow .swiper-wrapper.auto-height-yes {
+    height: 100%!important;
+}
+
+/*** Image Carousel **/
+.oe-gallery-slider .swiper-pagination-bullets {
+    cursor: default;
+}
+
+.oe-gallery-slider .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    opacity: 1!important;
+}
+
+.oe-gallery-slider.oe-gallery-slider-navigation-outside .swiper-pagination {
+    bottom: 0;
+}
+
+.oe-gallery-slider .swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+}
+
+.oe-gallery-slider.swiper-container-horizontal>.swiper-pagination-progress {
+    width: 100%;
+    height: 4px;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.25);
+    position: absolute;
+}
+
+.oe-gallery-slider .swiper-pagination-progress .swiper-pagination-progressbar {
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+}
+
+.oe-gallery-slider-wrapper .oe-swiper-button {
+	background-image: none;
+	width: auto;
+	height: auto;
+	line-height: 1;
+	position: absolute;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    z-index: 18;
+    cursor: pointer;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    outline: 0;
+}
+.oe-gallery-slider-wrapper .oe-swiper-button svg {
+    width: 25px;
+    height: 25px;
+}
+.oe-gallery-slider-wrapper .oe-swiper-button:focus,
+.oe-gallery-slider-wrapper .oe-swiper-button:active {
+    outline: 0;
+}
+.oe-gallery-slider-wrapper .oe-swiper-button-prev {
+	left: 10px;
+}
+.oe-gallery-slider-wrapper .oe-swiper-button-next {
+	right: 10px;
+}
+
+.oe-thumbnails-swiper .oe-gallery-slider-thumb {
+	background: no-repeat center;
+    background-size: cover;
+    height: 100%;
+	position: relative;
+	cursor: pointer;
+
+    transition: transform 0.5s ease-out;
+
+    --thumb-initial-scale: 1;
+    --thumb-hover-scale: 1;
+}
+
+.oe-thumbs-ratio-11 .oe-gallery-slider-thumb {
+	padding-bottom: 100%;
+}
+
+.oe-thumbs-ratio-43 .oe-gallery-slider-thumb {
+    padding-bottom: 75%;
+}
+
+.oe-thumbs-ratio-169 .oe-gallery-slider-thumb {
+    padding-bottom: 56.35%;
+}
+
+.oe-thumbs-ratio-219 .oe-gallery-slider-thumb {
+    padding-bottom: 42.8571%
+}
+
+.oxy-oe-gallery-slider .oe-swiper-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.oxy-oe-gallery-slider .oe-swiper-button svg,
+.oxy-oe-gallery-slider .oe-swiper-button:hover svg {
+    fill: currentColor;
+}
+
+.oe-gallery-slider-caption-btn {
+    background-color: #333;
+    color: #fff;
+    clear: both;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.swiper-scale-effect .swiper-slide-cover,
+.swiper-scale-effect .swiper-slide-cover img {
+  transition: transform 4.5s ease-out;
+  transform: scale(1.18);
+}
+
+.swiper-scale-effect .swiper-slide.swiper-slide-active .swiper-slide-cover,
+.swiper-scale-effect .swiper-slide.swiper-slide-active .swiper-slide-cover img {
+  transform: scale(1);
+}
+
+.oe-gallery-slider img {
+    max-width: 100%;
+    height: auto;
+}
+
+.oe-gallery-slider.oe-gallery-slider-navigation-outside {
+    padding-bottom: 40px;
+}
+
+/*.swiper-slide-prev,
+.swiper-slide-next {
+    transform: scale(0.85);
+}*/

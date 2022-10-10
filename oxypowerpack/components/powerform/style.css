@@ -1,0 +1,42 @@
+.oxy-power-form {
+    width: 100%;
+}
+
+.oxy-power-form .label-and-field-wrapper{
+    width: 100%;
+    /*min-width: 200px;*/
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.oxy-power-form-field {
+
+}
+
+.oxy-power-form label {
+    width: 150px;
+    line-height: 1em;
+}
+
+.oxy-power-form label[submit] {
+    color: rgba(0,0,0,0);
+}
+
+.power-form-field-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 30px;
+}
+
+.power-form-field-wrapper span {
+    display: none;
+}
+
+.oxy-power-form input,.oxy-power-form textarea,.oxy-power-form select,.oxy-power-form button {
+    /*width:100%;*/
+    max-width: 100%;
+}
+
+.oxy-power-form input[type='color'] {
+    min-height: 35px;
+}

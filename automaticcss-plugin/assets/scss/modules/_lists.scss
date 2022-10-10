@@ -1,0 +1,62 @@
+// Maps
+
+$markers: (
+    plus: "+",
+    x: "✕",
+    x-heavy: "✖",
+    x-fancy: "✘",
+    em: "—",
+    triangle: "▶",
+    info: "ℹ",
+    arrow: "➞",
+    arrow-heavy: "➜",
+    arrow-dotted: "⇢",
+    arrow-hollow: "⇨",
+    arrow-shadow: "➩",
+    circle: "○",
+    circle-filled: "◉",
+    circle-x: "⊗",
+    circle-plus: "⊕",
+    circle-minus: "⊝",
+    circle-no: "⊘",
+    circle-star: "✪",
+    star: "★",
+    star-outline: "☆",
+    square: "■",
+    square-outline: "◻",
+    diamond: "◆",
+    diamond-outline: "◇",
+    bullseye: "◎",
+    hand: "☛",
+    hand-outline: "☞",
+    heart: "♥",
+    flag: "⚑",
+    flag-outline: "⚐",
+    pencil: "✎",
+    check: "✓",
+);
+
+// Marker Colors
+
+@each $colorName, $colorSet in $colors {
+    @each $colorName, $colorValue in $colorSet {
+        .marker--#{$colorName} {
+            li::marker {
+                color: $colorValue;
+            }
+        }
+    }
+}
+
+// Marker Styles (FUTURE)
+
+// @each $style, $value in $markers {
+//     .marker--#{$style} {
+//         li {
+//                 padding-left: .5em;
+//             }
+//         li::marker {
+//             content: "#{$value}";
+//         }
+//     }
+// }

@@ -1,0 +1,16 @@
+@each $widthName, $widthValue in $widths {
+  .width--#{$widthName}:not([class*="breakout--"]) {
+    width: 100%;
+    max-width: #{$widthValue};
+
+    @if $widthName == vp-max {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.width--auto {
+  width: auto !important;
+  width: 100%;
+}

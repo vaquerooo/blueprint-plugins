@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="38" viewBox="0 0 70 38">
+  <defs>
+    <clipPath id="clip-image-hotspot-marker_1">
+      <rect width="70" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="image-hotspot-marker_1" data-name="image-hotspot-marker – 1" clip-path="url(#clip-image-hotspot-marker_1)">
+    <g id="streamline-icon-pin-x-mark-1_140x140" data-name="streamline-icon-pin-x-mark-1@140x140" transform="translate(0.755 3.103)">
+      <path id="Path_253" data-name="Path 253" d="M43.75,122.974l10.172-3.391" transform="translate(-14.113 -94.077)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_254" data-name="Path 254" d="M53.922,122.974,43.75,119.583" transform="translate(-14.113 -94.077)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_255" data-name="Path 255" d="M43.75,23.9a3.48,3.48,0,1,0,3.48-3.48A3.48,3.48,0,0,0,43.75,23.9Z" transform="translate(-12.506 -12.518)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_256" data-name="Path 256" d="M43.2,11.378a8.477,8.477,0,1,0-10.368,8.26.565.565,0,0,1,.416.389l.934,3.111a.565.565,0,0,0,1.083,0l.934-3.111a.565.565,0,0,1,.416-.389,8.477,8.477,0,0,0,6.586-8.26Z" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

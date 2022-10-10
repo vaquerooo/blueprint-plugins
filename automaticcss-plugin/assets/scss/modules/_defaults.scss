@@ -1,0 +1,11 @@
+@include site-defaults();
+
+@include if-builders-off {
+  // Sections
+
+  .section__inner {
+    @include map-get-section-spacing(m);
+    max-width: $vp-max * 1rem;
+    margin: 0 auto;
+  }
+}

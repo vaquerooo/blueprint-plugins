@@ -1,0 +1,214 @@
+$coreColors: (
+  primary: var(--primary),
+  secondary: var(--secondary),
+  accent: var(--accent),
+  base: var(--base),
+  shade: var(--shade),
+  black: #000,
+  white: #fff,
+);
+
+$colors: (
+  primarySet: (
+    primary: hsl($primary-h, $primary-s, $primary-l),
+    primary-hover: hsl($primary-h, $primary-hover-s, $primary-l * $primary-hover-l),
+    primary-ultra-light: hsl($primary-h, $primary-ultra-light-s, $primary-ultra-light-l),
+    primary-light: hsl($primary-h, $primary-light-s, $primary-light-l),
+    primary-medium: hsl($primary-h, $primary-medium-s, $primary-medium-l),
+    primary-dark: hsl($primary-h, $primary-dark-s, $primary-dark-l),
+    primary-ultra-dark: hsl($primary-h, $primary-ultra-dark-s, $primary-ultra-dark-l),
+    primary-comp: hsl($primary-h + 180, $primary-s, $primary-l),
+  ),
+  secondarySet: (
+    secondary: hsl($secondary-h, $secondary-s, $secondary-l),
+    secondary-hover:
+      hsl($secondary-h, $secondary-hover-s, $secondary-l * $secondary-hover-l),
+    secondary-ultra-light:
+      hsl($secondary-h, $secondary-ultra-light-s, $secondary-ultra-light-l),
+    secondary-light: hsl($secondary-h, $secondary-light-s, $secondary-light-l),
+    secondary-medium: hsl($secondary-h, $secondary-medium-s, $secondary-medium-l),
+    secondary-dark: hsl($secondary-h, $secondary-dark-s, $secondary-dark-l),
+    secondary-ultra-dark:
+      hsl($secondary-h, $secondary-ultra-dark-s, $secondary-ultra-dark-l),
+    secondary-comp: hsl($secondary-h + 180, $secondary-s, $secondary-l),
+  ),
+  accentSet: (
+    accent: hsl($accent-h, $accent-s, $accent-l),
+    accent-hover: hsl($accent-h, $accent-hover-s, $accent-l * $accent-hover-l),
+    accent-ultra-light: hsl($accent-h, $accent-ultra-light-s, $accent-ultra-light-l),
+    accent-light: hsl($accent-h, $accent-light-s, $accent-light-l),
+    accent-medium: hsl($accent-h, $accent-medium-s, $accent-medium-l),
+    accent-dark: hsl($accent-h, $accent-dark-s, $accent-dark-l),
+    accent-ultra-dark: hsl($accent-h, $accent-ultra-dark-s, $accent-ultra-dark-l),
+    accent-comp: hsl($accent-h + 180, $accent-s, $accent-l),
+  ),
+  baseSet: (
+    base: hsl($base-h, $base-s, $base-l),
+    base-hover: hsl($base-h, $base-hover-s, $base-l * $base-hover-l),
+    base-ultra-light: hsl($base-h, $base-ultra-light-s, $base-ultra-light-l),
+    base-light: hsl($base-h, $base-light-s, $base-light-l),
+    base-medium: hsl($base-h, $base-medium-s, $base-medium-l),
+    base-dark: hsl($base-h, $base-dark-s, $base-dark-l),
+    base-ultra-dark: hsl($base-h, $base-ultra-dark-s, $base-ultra-dark-l),
+    base-comp: hsl($base-h + 180, $base-s, $base-l),
+  ),
+  shadeSet: (
+    white: #fff,
+    black: #000,
+    shade: hsl($shade-h, $shade-s, $shade-l),
+    shade-hover: hsl($shade-h, $shade-hover-s, $shade-l * $shade-hover-l),
+    shade-ultra-light: hsl($shade-h, $shade-ultra-light-s, $shade-ultra-light-l),
+    shade-light: hsl($shade-h, $shade-light-s, $shade-light-l),
+    shade-medium: hsl($shade-h, $shade-medium-s, $shade-medium-l),
+    shade-dark: hsl($shade-h, $shade-dark-s, $shade-dark-l),
+    shade-ultra-dark: hsl($shade-h, $shade-ultra-dark-s, $shade-ultra-dark-l),
+    shade-comp: hsl($shade-h + 180, $shade-s, $shade-l),
+  ),
+);
+
+$transColors: (
+  primaryTrans: (
+    primary-trans-10: hsla($primary-h, $primary-s, $primary-l, 0.1),
+    primary-trans-20: hsla($primary-h, $primary-s, $primary-l, 0.2),
+    primary-trans-40: hsla($primary-h, $primary-s, $primary-l, 0.4),
+    primary-trans-60: hsla($primary-h, $primary-s, $primary-l, 0.6),
+    primary-trans-80: hsla($primary-h, $primary-s, $primary-l, 0.8),
+    primary-trans-90: hsla($primary-h, $primary-s, $primary-l, 0.9),
+    primary-ultra-dark-trans-10:
+      hsla($primary-h, $primary-ultra-dark-s, $primary-ultra-dark-l, 0.1),
+    primary-ultra-dark-trans-20:
+      hsla($primary-h, $primary-ultra-dark-s, $primary-ultra-dark-l, 0.2),
+    primary-ultra-dark-trans-40:
+      hsla($primary-h, $primary-ultra-dark-s, $primary-ultra-dark-l, 0.4),
+    primary-ultra-dark-trans-60:
+      hsla($primary-h, $primary-ultra-dark-s, $primary-ultra-dark-l, 0.6),
+    primary-ultra-dark-trans-80:
+      hsla($primary-h, $primary-ultra-dark-s, $primary-ultra-dark-l, 0.8),
+    primary-ultra-dark-trans-90:
+      hsla($primary-h, $primary-ultra-dark-s, $primary-ultra-dark-l, 0.9),
+    primary-light-trans-10: hsla($primary-h, $primary-light-s, $primary-light-l, 0.1),
+    primary-light-trans-20: hsla($primary-h, $primary-light-s, $primary-light-l, 0.2),
+    primary-light-trans-40: hsla($primary-h, $primary-light-s, $primary-light-l, 0.4),
+    primary-light-trans-60: hsla($primary-h, $primary-light-s, $primary-light-l, 0.6),
+    primary-light-trans-80: hsla($primary-h, $primary-light-s, $primary-light-l, 0.8),
+    primary-light-trans-90: hsla($primary-h, $primary-light-s, $primary-light-l, 0.9),
+  ),
+  secondaryTrans: (
+    secondary-trans-10: hsla($secondary-h, $secondary-s, $secondary-l, 0.1),
+    secondary-trans-20: hsla($secondary-h, $secondary-s, $secondary-l, 0.2),
+    secondary-trans-40: hsla($secondary-h, $secondary-s, $secondary-l, 0.4),
+    secondary-trans-60: hsla($secondary-h, $secondary-s, $secondary-l, 0.6),
+    secondary-trans-80: hsla($secondary-h, $secondary-s, $secondary-l, 0.8),
+    secondary-trans-90: hsla($secondary-h, $secondary-s, $secondary-l, 0.9),
+    secondary-ultra-dark-trans-10:
+      hsla($secondary-h, $secondary-ultra-dark-s, $secondary-ultra-dark-l, 0.1),
+    secondary-ultra-dark-trans-20:
+      hsla($secondary-h, $secondary-ultra-dark-s, $secondary-ultra-dark-l, 0.2),
+    secondary-ultra-dark-trans-40:
+      hsla($secondary-h, $secondary-ultra-dark-s, $secondary-ultra-dark-l, 0.4),
+    secondary-ultra-dark-trans-60:
+      hsla($secondary-h, $secondary-ultra-dark-s, $secondary-ultra-dark-l, 0.6),
+    secondary-ultra-dark-trans-80:
+      hsla($secondary-h, $secondary-ultra-dark-s, $secondary-ultra-dark-l, 0.8),
+    secondary-ultra-dark-trans-90:
+      hsla($secondary-h, $secondary-ultra-dark-s, $secondary-ultra-dark-l, 0.9),
+    secondary-light-trans-10:
+      hsla($secondary-h, $secondary-light-s, $secondary-light-l, 0.1),
+    secondary-light-trans-20:
+      hsla($secondary-h, $secondary-light-s, $secondary-light-l, 0.2),
+    secondary-light-trans-40:
+      hsla($secondary-h, $secondary-light-s, $secondary-light-l, 0.4),
+    secondary-light-trans-60:
+      hsla($secondary-h, $secondary-light-s, $secondary-light-l, 0.6),
+    secondary-light-trans-80:
+      hsla($secondary-h, $secondary-light-s, $secondary-light-l, 0.8),
+    secondary-light-trans-90:
+      hsla($secondary-h, $secondary-light-s, $secondary-light-l, 0.9),
+  ),
+  accentTrans: (
+    accent-trans-10: hsla($accent-h, $accent-s, $accent-l, 0.1),
+    accent-trans-20: hsla($accent-h, $accent-s, $accent-l, 0.2),
+    accent-trans-40: hsla($accent-h, $accent-s, $accent-l, 0.4),
+    accent-trans-60: hsla($accent-h, $accent-s, $accent-l, 0.6),
+    accent-trans-80: hsla($accent-h, $accent-s, $accent-l, 0.8),
+    accent-trans-90: hsla($accent-h, $accent-s, $accent-l, 0.9),
+    accent-ultra-dark-trans-10:
+      hsla($accent-h, $accent-ultra-dark-s, $accent-ultra-dark-l, 0.1),
+    accent-ultra-dark-trans-20:
+      hsla($accent-h, $accent-ultra-dark-s, $accent-ultra-dark-l, 0.2),
+    accent-ultra-dark-trans-40:
+      hsla($accent-h, $accent-ultra-dark-s, $accent-ultra-dark-l, 0.4),
+    accent-ultra-dark-trans-60:
+      hsla($accent-h, $accent-ultra-dark-s, $accent-ultra-dark-l, 0.6),
+    accent-ultra-dark-trans-80:
+      hsla($accent-h, $accent-ultra-dark-s, $accent-ultra-dark-l, 0.8),
+    accent-ultra-dark-trans-90:
+      hsla($accent-h, $accent-ultra-dark-s, $accent-ultra-dark-l, 0.9),
+    accent-light-trans-10: hsla($accent-h, $accent-light-s, $accent-light-l, 0.1),
+    accent-light-trans-20: hsla($accent-h, $accent-light-s, $accent-light-l, 0.2),
+    accent-light-trans-40: hsla($accent-h, $accent-light-s, $accent-light-l, 0.4),
+    accent-light-trans-60: hsla($accent-h, $accent-light-s, $accent-light-l, 0.6),
+    accent-light-trans-80: hsla($accent-h, $accent-light-s, $accent-light-l, 0.8),
+    accent-light-trans-90: hsla($accent-h, $accent-light-s, $accent-light-l, 0.9),
+  ),
+  baseTrans: (
+    base-trans-10: hsla($base-h, $base-s, $base-l, 0.1),
+    base-trans-20: hsla($base-h, $base-s, $base-l, 0.2),
+    base-trans-40: hsla($base-h, $base-s, $base-l, 0.4),
+    base-trans-60: hsla($base-h, $base-s, $base-l, 0.6),
+    base-trans-80: hsla($base-h, $base-s, $base-l, 0.8),
+    base-trans-90: hsla($base-h, $base-s, $base-l, 0.9),
+    base-ultra-dark-trans-10: hsla($base-h, $base-ultra-dark-s, $base-ultra-dark-l, 0.1),
+    base-ultra-dark-trans-20: hsla($base-h, $base-ultra-dark-s, $base-ultra-dark-l, 0.2),
+    base-ultra-dark-trans-40: hsla($base-h, $base-ultra-dark-s, $base-ultra-dark-l, 0.4),
+    base-ultra-dark-trans-60: hsla($base-h, $base-ultra-dark-s, $base-ultra-dark-l, 0.6),
+    base-ultra-dark-trans-80: hsla($base-h, $base-ultra-dark-s, $base-ultra-dark-l, 0.8),
+    base-ultra-dark-trans-90: hsla($base-h, $base-ultra-dark-s, $base-ultra-dark-l, 0.9),
+    base-light-trans-10: hsla($base-h, $base-light-s, $base-light-l, 0.1),
+    base-light-trans-20: hsla($base-h, $base-light-s, $base-light-l, 0.2),
+    base-light-trans-40: hsla($base-h, $base-light-s, $base-light-l, 0.4),
+    base-light-trans-60: hsla($base-h, $base-light-s, $base-light-l, 0.6),
+    base-light-trans-80: hsla($base-h, $base-light-s, $base-light-l, 0.8),
+    base-light-trans-90: hsla($base-h, $base-light-s, $base-light-l, 0.9),
+  ),
+  shadeTrans: (
+    white-trans-10: hsla(0, 0%, 100%, 0.1),
+    white-trans-20: hsla(0, 0%, 100%, 0.2),
+    white-trans-40: hsla(0, 0%, 100%, 0.4),
+    white-trans-60: hsla(0, 0%, 100%, 0.6),
+    white-trans-80: hsla(0, 0%, 100%, 0.8),
+    white-trans-90: hsla(0, 0%, 100%, 0.9),
+    black-trans-10: hsla(0, 0%, 0%, 0.1),
+    black-trans-20: hsla(0, 0%, 0%, 0.2),
+    black-trans-40: hsla(0, 0%, 0%, 0.4),
+    black-trans-60: hsla(0, 0%, 0%, 0.6),
+    black-trans-80: hsla(0, 0%, 0%, 0.8),
+    black-trans-90: hsla(0, 0%, 0%, 0.9),
+    shade-trans-10: hsla($shade-h, $shade-s, $shade-l, 0.1),
+    shade-trans-20: hsla($shade-h, $shade-s, $shade-l, 0.2),
+    shade-trans-40: hsla($shade-h, $shade-s, $shade-l, 0.4),
+    shade-trans-60: hsla($shade-h, $shade-s, $shade-l, 0.6),
+    shade-trans-80: hsla($shade-h, $shade-s, $shade-l, 0.8),
+    shade-trans-90: hsla($shade-h, $shade-s, $shade-l, 0.9),
+    shade-ultra-dark-trans-10:
+      hsla($shade-h, $shade-ultra-dark-s, $shade-ultra-dark-l, 0.1),
+    shade-ultra-dark-trans-20:
+      hsla($shade-h, $shade-ultra-dark-s, $shade-ultra-dark-l, 0.2),
+    shade-ultra-dark-trans-40:
+      hsla($shade-h, $shade-ultra-dark-s, $shade-ultra-dark-l, 0.4),
+    shade-ultra-dark-trans-60:
+      hsla($shade-h, $shade-ultra-dark-s, $shade-ultra-dark-l, 0.6),
+    shade-ultra-dark-trans-80:
+      hsla($shade-h, $shade-ultra-dark-s, $shade-ultra-dark-l, 0.8),
+    shade-ultra-dark-trans-90:
+      hsla($shade-h, $shade-ultra-dark-s, $shade-ultra-dark-l, 0.9),
+    shade-light-trans-10: hsla($shade-h, $shade-light-s, $shade-light-l, 0.1),
+    shade-light-trans-20: hsla($shade-h, $shade-light-s, $shade-light-l, 0.2),
+    shade-light-trans-40: hsla($shade-h, $shade-light-s, $shade-light-l, 0.4),
+    shade-light-trans-60: hsla($shade-h, $shade-light-s, $shade-light-l, 0.6),
+    shade-light-trans-80: hsla($shade-h, $shade-light-s, $shade-light-l, 0.8),
+    shade-light-trans-90: hsla($shade-h, $shade-light-s, $shade-light-l, 0.9),
+  ),
+);
+
+$allColors: map-merge($colors, $transColors);

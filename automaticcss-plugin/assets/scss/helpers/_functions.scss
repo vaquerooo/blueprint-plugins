@@ -1,0 +1,78 @@
+// TURN RAW UNITS INTO REM UNITS
+
+@function rem($val) {
+  @return $val * 1rem;
+}
+
+// TURN RAW UNITS INTO % VALUES
+
+@function percent($val) {
+  @return $val * 1%;
+}
+
+// TURN RAW UNITS INTO VW
+
+@function vw($val) {
+  @return $val * 1vw;
+}
+
+// TURN RAW UNITS INTO VH
+
+@function vh($val) {
+  @return $val * 1vh;
+}
+
+// Exponent Math
+
+@function pow($number, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  }
+
+  @return $value;
+}
+
+// calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+
+@function fluidCalc($text-min, $text-max) {
+  $vp-delta: $vp-max - $vp-min;
+  $text-delta: $text-max - $text-min;
+  $vp-min-rem: $vp-min * 1rem;
+  $text-min-rem: $text-min * 1rem;
+  @return calc(
+    #{$text-min-rem} + (#{$text-delta} * ((100vw - #{$vp-min-rem}) / #{$vp-delta}))
+  );
+}
+
+@function fluidClamp($min, $max) {
+  $slope: ($max - $min) / ($vp-max - $vp-min);
+  $intercept: ($min - $slope * $vp-min) * 1rem;
+  $slope-vw: $slope * 100;
+  $min-rem: $min * 1rem;
+  $max-rem: $max * 1rem;
+  @return clamp(#{$min-rem}, calc(#{$slope-vw}vw + #{$intercept}), #{$max-rem});
+}
+
+@function mapGetColor($colorSet, $colorName) {
+  @return map-get(map-get($allColors, $colorSet), $colorName);
+}
+
+// S and XS Stop Functions
+// Protects the bottom and top from going below stop value
+// Only use on S and XS sizes
+
+@function fluidClampStop($stop, $min, $max) {
+  $slope: ($max - $min) / ($vp-max - $vp-min);
+  $intercept: ($min - $slope * $vp-min) * 1rem;
+  $slope-vw: $slope * 100;
+  $min-rem: $min * 1rem;
+  $max-rem: $max * 1rem;
+  @return max(
+    $stop,
+    clamp(#{$min-rem}, calc(#{$slope-vw}vw + #{$intercept}), #{$max-rem})
+  );
+}

@@ -1,0 +1,7 @@
+//GENERATE ROUNDED CLASSES
+
+@each $size, $value in $radius {
+  .rounded--#{$size} {
+    border-radius: #{$value};
+  }
+}

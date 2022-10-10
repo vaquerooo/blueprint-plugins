@@ -1,0 +1,42 @@
+// Changes made here need to made for certain frameworks also.
+
+@include if-oxygen-off {
+  @each $size, $extension in $sizeExtensions {
+    .gap--#{$extension} {
+      @if $size == xs {
+        @include map-get-gap(xs);
+      } @else if $size == s {
+        @include map-get-gap(s);
+      } @else if $size == m {
+        @include map-get-gap(m);
+      } @else if $size == l {
+        @include map-get-gap(l);
+      } @else if $size == xl {
+        @include map-get-gap(xl);
+      } @else if $size == xxl {
+        @include map-get-gap(xxl);
+      }
+    }
+  }
+  @each $breakpoint, $value in $breakpoints {
+    @include breakpoint($breakpoint) {
+      @each $size, $extension in $sizeExtensions {
+        .gap--#{$breakpoint}-#{$extension} {
+          @if $size == xs {
+            @include map-get-gap(xs);
+          } @else if $size == s {
+            @include map-get-gap(s);
+          } @else if $size == m {
+            @include map-get-gap(m);
+          } @else if $size == l {
+            @include map-get-gap(l);
+          } @else if $size == xl {
+            @include map-get-gap(xl);
+          } @else if $size == xxl {
+            @include map-get-gap(xxl);
+          }
+        }
+      }
+    }
+  }
+}

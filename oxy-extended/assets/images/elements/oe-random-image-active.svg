@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="38" viewBox="0 0 70 38">
+  <defs>
+    <clipPath id="clip-random-image_1">
+      <rect width="70" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="random-image_1" data-name="random-image – 1" clip-path="url(#clip-random-image_1)">
+    <g id="streamline-icon-image-file-refresh_140x140" data-name="streamline-icon-image-file-refresh@140x140" transform="translate(19.083 3.083)">
+      <path id="Path_177" data-name="Path 177" d="M26.25,34.344a2.261,2.261,0,1,0,2.261-2.261A2.261,2.261,0,0,0,26.25,34.344Z" transform="translate(-18.812 -23.514)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_178" data-name="Path 178" d="M30.64,59.388l-.7-1.121a.565.565,0,0,0-.959,0L26,63.039l-1.216-1.947a.565.565,0,0,0-.959,0l-3.407,5.451h5.652" transform="translate(-14.109 -44.409)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_179" data-name="Path 179" d="M14.221,28.917H4.047a1.13,1.13,0,0,1-1.13-1.13V4.047a1.13,1.13,0,0,1,1.13-1.13H19.074a1.13,1.13,0,0,1,.8.331l4.191,4.191a1.13,1.13,0,0,1,.331.8v4.853" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_180" data-name="Path 180" d="M116.667,85.623h3.957V81.667" transform="translate(-91.706 -63.489)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_181" data-name="Path 181" d="M76.207,85.351A6.217,6.217,0,1,1,82.4,78.568" transform="translate(-54.073 -56.434)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_182" data-name="Path 182" d="M120.623,81.667v3.957h-3.957" transform="translate(-91.706 -63.489)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

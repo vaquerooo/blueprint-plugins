@@ -1,0 +1,24 @@
+@mixin overlayBefore {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@each $colorName, $colorSet in $transColors {
+  @each $colorName, $colorValue in $colorSet {
+    .overlay--#{$colorName} {
+      position: relative;
+      z-index: 0;
+
+      &::before {
+        @include overlayBefore;
+        background-color: #{$colorValue};
+      }
+    }
+  }
+}
+

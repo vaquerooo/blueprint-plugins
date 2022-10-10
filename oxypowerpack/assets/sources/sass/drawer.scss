@@ -1,0 +1,221 @@
+body{
+
+
+
+  .oxypowerpack {
+
+    display: none;
+
+    &:not(.settings) {
+      position: fixed;
+      bottom: 0;
+      left: 8px;
+      right: 8px;
+      height: 350px;
+      z-index: 100;
+      &:not(.docked) {
+        box-shadow: 0px 0px 22px 2px rgba(0,0,0,0.75);
+      }
+    }
+    transition: all .45s ease;
+
+    &.closed {
+      height: 0;
+    }
+
+    &.docked {
+      left: 0;
+      right: 0;
+    }
+
+    .container-fluid{
+
+      // only for the in-builder drawer
+      &.opp-maincontainer {
+        display: flex;
+        flex-direction: column;
+        padding:0;
+        min-width: 890px;
+        overflow: hidden;
+        height: 100%;
+        user-select: none;
+
+        .oxygen-file-input{
+          border-radius: 0;
+        }
+
+        .navbar {
+          padding-left: 0;
+          .version-info{
+            margin-right: 5px;
+            .version-label:not(:empty){
+              margin-left: 3px;
+            }
+            cursor: pointer;
+            &:hover {
+              color: white;
+            }
+          }
+
+          .navbar-nav {
+            flex-direction: row !important;
+          }
+        }
+
+        .nav-item {
+          cursor: pointer;
+        }
+
+        .row {
+          flex:1;
+
+          .card{
+            height: 100%;
+          }
+        }
+
+        .new-page-button{
+          cursor: pointer;
+        }
+
+        .card-header {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-height: 39px;
+
+          .close{
+            position: absolute;
+            right: 8px;
+          }
+        }
+
+        .admin-menu-list {
+          max-height: 265px;
+          overflow: auto;
+
+          .list-group-item{
+            cursor: pointer;
+
+            .delete-action {
+              cursor: pointer;
+              display: none;
+            }
+          }
+
+          .list-group-item:hover{
+            .delete-action {
+              display: inline-block;
+            }
+          }
+        }
+
+        .post-list-container{
+          display: flex;
+          flex-direction: column;
+
+          .post-list{
+            flex:1;
+
+            .list-group-item {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+
+          .progress-bar {
+            height: 20px;
+          }
+
+          .post-list-paginator{
+            display:flex;
+
+            .post-list-paginator-status{
+              flex: 1;
+              text-align: center;
+            }
+          }
+
+          .page-item, .list-group-item {
+            cursor:pointer;
+          }
+        }
+
+        .edit-post-container{
+          display: flex;
+          flex-direction: row;
+
+          .post-action-buttons{
+            display: flex;
+            flex-direction: column;
+          }
+
+          .builder-shortcodes{
+            width: 100%;
+            flex: 1;
+            overflow-y: scroll;
+            white-space: pre-wrap;
+            max-height: 252px;
+            border: 1px solid rgba(0,0,0,0.6);
+          }
+        }
+        #oxypowerpack-maintenance-form{
+          .row{
+            &.form-group{
+              margin-bottom:0;
+            }
+          }
+        }
+
+        .helper-area{
+          max-height: 270px;
+          overflow: auto;
+        }
+
+        #oppLocationMap,#oppFeaturesMap{
+          width: 100%;
+          height: 370px;
+        }
+
+      } // end &.opp-maincontainer
+    } // end .container-fluid
+
+    button.wp-switch-editor {
+      font-size: 10px;
+    }
+
+  } // end .oxypowerpack
+
+  &.choosing-selector {
+    .oxypowerpack{
+      .opp-maincontainer{
+        display:none;
+      }
+    }
+  }
+
+  @import "datetimepicker";
+
+  #opp-login{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba( 0, 0, 0 ,0.5 );
+    z-index: 9000000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #opp-floating-login-iframe{
+      width: 360px;
+      height: 500px;
+
+    }
+  }
+
+} // end body
+
+

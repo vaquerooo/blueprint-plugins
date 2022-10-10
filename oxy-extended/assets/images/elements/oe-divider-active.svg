@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="38" viewBox="0 0 70 38">
+  <defs>
+    <clipPath id="clip-divider_1">
+      <rect width="70" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="divider_1" data-name="divider – 1" clip-path="url(#clip-divider_1)">
+    <g id="Group_1135" data-name="Group 1135" transform="translate(-4029.5 -19.5)">
+      <path id="Path_43" data-name="Path 43" d="M70,49.583v26" transform="translate(4127.083 -31.5) rotate(90)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_44" data-name="Path 44" d="M6.234,51.121c-.22-.22-.4-.146-.4.165v14.7c0,.311.18.385.4.165l7.113-7.113a.565.565,0,0,0,0-.8Z" transform="translate(4006.506 40.012) rotate(-90)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_45" data-name="Path 45" d="M101.82,51.121c.226-.22.4-.146.4.165v14.7c0,.311-.18.385-.4.165l-7.113-7.113a.565.565,0,0,1,0-.8Z" transform="translate(4006.506 145.72) rotate(-90)" fill="none" stroke="#386689" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

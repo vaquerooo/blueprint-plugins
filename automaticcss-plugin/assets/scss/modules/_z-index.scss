@@ -1,0 +1,15 @@
+@each $z-index, $value in $zmap {
+  .z--#{$z-index} {
+    z-index: $value;
+  }
+}
+
+@each $breakpoint, $breakpointValue in $breakpoints {
+  @include breakpoint($breakpoint) {
+    @each $z-index, $value in $zmap {
+      .z--#{$breakpoint}-#{$z-index} {
+        z-index: $value;
+      }
+    }
+  }
+}

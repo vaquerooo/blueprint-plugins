@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="38" viewBox="0 0 70 38">
+  <defs>
+    <clipPath id="clip-gallery">
+      <rect width="70" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="gallery" clip-path="url(#clip-gallery)">
+    <g id="streamline-icon-paginate-filter-picture_140x140" data-name="streamline-icon-paginate-filter-picture@140x140" transform="translate(22 6)">
+      <path id="Path_38" data-name="Path 38" d="M43.025,4.047a1.13,1.13,0,0,0-1.13-1.13H21.547a1.13,1.13,0,0,0-1.13,1.13V24.395a1.13,1.13,0,0,0,1.13,1.13H41.895a1.13,1.13,0,0,0,1.13-1.13Z" transform="translate(-17.025 -2.917)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_39" data-name="Path 39" d="M63.714,61.392l-3-8.014a.565.565,0,0,0-1-.113L55.8,59.131l-2.316-2.78a.565.565,0,0,0-.919.071l-2.982,4.969" transform="translate(-40.54 -43.305)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_40" data-name="Path 40" d="M49.583,27.928a1.7,1.7,0,1,0,1.7-1.7A1.7,1.7,0,0,0,49.583,27.928Z" transform="translate(-40.54 -21.714)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_41" data-name="Path 41" d="M43.025,96.232H20.417" transform="translate(-17.025 -78.149)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_42" data-name="Path 42" d="M6.308,26.25H4.047a1.13,1.13,0,0,0-1.13,1.13V46.6a1.13,1.13,0,0,0,1.13,1.13H23.264a1.13,1.13,0,0,0,1.13-1.13V44.337" transform="translate(-2.917 -21.728)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

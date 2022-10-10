@@ -1,0 +1,24 @@
+@include if-bricks-off {
+  $marginDirections: top, bottom, right, left;
+
+  @each $marginDirection in $marginDirections {
+    @each $size, $extension in $sizeExtensions {
+      .margin-#{$marginDirection}--#{$extension} {
+        margin-#{$marginDirection}: map-get(
+          map-get($spacing, pure),
+          space-#{$extension}-pure
+        );
+        margin-#{$marginDirection}: map-get(
+          map-get($spacing, calc),
+          space-#{$extension}-calc
+        );
+        margin-#{$marginDirection}: map-get(
+          map-get($spacing, clamp),
+          space-#{$extension}-clamp
+        );
+      }
+    }
+  }
+}
+
+// Bricks sets margin on all images to zero by default so margin classes are moved to Bricks overrides file.

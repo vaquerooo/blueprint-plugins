@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="38" viewBox="0 0 70 38">
+  <defs>
+    <clipPath id="clip-countdown">
+      <rect width="70" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="countdown" clip-path="url(#clip-countdown)">
+    <g id="streamline-icon-stopwatch_140x140" data-name="streamline-icon-stopwatch@140x140" transform="translate(9.417 3.078)">
+      <path id="Path_242" data-name="Path 242" d="M14.583,36.995A10.739,10.739,0,1,0,25.322,26.256,10.739,10.739,0,0,0,14.583,36.995Z" transform="translate(0 -18.812)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_243" data-name="Path 243" d="M52.5,2.922h6.783" transform="translate(-30.569)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_244" data-name="Path 244" d="M109.182,34.1l2.016-2.016" transform="translate(-76.267 -23.514)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_245" data-name="Path 245" d="M61.25,7.576V2.922h3.391V7.578" transform="translate(-37.623)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_246" data-name="Path 246" d="M116.667,29.172l1.13,1.13" transform="translate(-82.301 -21.163)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_247" data-name="Path 247" d="M48.837,60.509,43.75,55.422" transform="translate(-23.514 -42.326)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

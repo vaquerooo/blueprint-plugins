@@ -1,0 +1,1837 @@
+{
+    "tabs": {
+        "viewport": {
+            "title": "Viewport",
+            "description": "Website width & breakpoints.",
+            "content": {
+                "breakpoints": {
+                    "type": "panel",
+                    "title": "Breakpoints",
+                    "content": {
+                        "last-tab": {
+                            "type": "variable"
+                        },
+                        "vp-max": {
+                            "type": "variable",
+                            "title": "Website Width (XL)"
+                        },
+                        "breakpoint-xl": {
+                            "type": "variable",
+                            "title": "Hidden"
+                        },
+                        "breakpoint-l": {
+                            "type": "variable",
+                            "title": "Vertical Tablet (L)"
+                        },
+                        "breakpoint-m": {
+                            "type": "variable",
+                            "title": "Horizontal Phone (M)"
+                        },
+                        "breakpoint-s": {
+                            "type": "variable",
+                            "title": "Vertical Phone (S)"
+                        },
+                        "vp-min": {
+                            "type": "variable",
+                            "title": "Viewport Minimum"
+                        }
+                    }
+                }
+            }
+        },
+        "colors": {
+            "title": "Palette",
+            "description": "Brand colors & shades.",
+            "content": {
+                "primary": {
+                    "type": "panel",
+                    "title": "Primary",
+                    "tooltip": "The action color (buttons, links, etc.)",
+                    "variable": "color-primary",
+                    "content": {
+                        "primary-shades": {
+                            "type": "accordion",
+                            "title": "Edit Primary Shades",
+                            "description": "Adjust each shade’s saturation and lightness value. Higher values provide more saturation/lightness and lower values provide less.",
+                            "content": {
+                                "primary-hover": {
+                                    "type": "group",
+                                    "title": "Hover",
+                                    "content": {
+                                        "primary-hover-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "primary-hover-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "primary-ultra-light": {
+                                    "type": "group",
+                                    "title": "Ultra Light",
+                                    "content": {
+                                        "primary-ultra-light-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "primary-ultra-light-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "primary-light": {
+                                    "type": "group",
+                                    "title": "Light",
+                                    "content": {
+                                        "primary-light-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "primary-light-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "primary-medium": {
+                                    "type": "group",
+                                    "title": "Medium",
+                                    "content": {
+                                        "primary-medium-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "primary-medium-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "primary-dark": {
+                                    "type": "group",
+                                    "title": "Dark",
+                                    "content": {
+                                        "primary-dark-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "primary-dark-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "primary-ultra-dark": {
+                                    "type": "group",
+                                    "title": "Ultra Dark",
+                                    "content": {
+                                        "primary-ultra-dark-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "primary-ultra-dark-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "secondary": {
+                    "type": "panel",
+                    "title": "Secondary",
+                    "tooltip": "An alternate to the primary color.",
+                    "variable": "color-secondary",
+                    "content": {
+                        "secondary-shades": {
+                            "type": "accordion",
+                            "title": "Edit Secondary Shades",
+                            "description": "Adjust each shade’s saturation and lightness value. Higher values provide more saturation/lightness and lower values provide less.",
+                            "content": {
+                                "secondary-hover": {
+                                    "type": "group",
+                                    "title": "Hover",
+                                    "content": {
+                                        "secondary-hover-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "secondary-hover-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "secondary-ultra-light": {
+                                    "type": "group",
+                                    "title": "Ultra Light",
+                                    "content": {
+                                        "secondary-ultra-light-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "secondary-ultra-light-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "secondary-light": {
+                                    "type": "group",
+                                    "title": "Light",
+                                    "content": {
+                                        "secondary-light-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "secondary-light-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "secondary-medium": {
+                                    "type": "group",
+                                    "title": "Medium",
+                                    "content": {
+                                        "secondary-medium-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "secondary-medium-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "secondary-dark": {
+                                    "type": "group",
+                                    "title": "Dark",
+                                    "content": {
+                                        "secondary-dark-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "secondary-dark-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "secondary-ultra-dark": {
+                                    "type": "group",
+                                    "title": "Ultra Dark",
+                                    "content": {
+                                        "secondary-ultra-dark-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "secondary-ultra-dark-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "accent": {
+                    "type": "panel",
+                    "title": "Accent",
+                    "tooltip": "Typically the least used color on the website.",
+                    "variable": "color-accent",
+                    "content": {
+                        "accent-shades": {
+                            "type": "accordion",
+                            "title": "Edit Accent Shades",
+                            "description": "Adjust each shade’s saturation and lightness value. Higher values provide more saturation/lightness and lower values provide less.",
+                            "content": {
+                                "accent-hover": {
+                                    "type": "group",
+                                    "title": "Hover",
+                                    "content": {
+                                        "accent-hover-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "accent-hover-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "accent-ultra-light": {
+                                    "type": "group",
+                                    "title": "Ultra Light",
+                                    "content": {
+                                        "accent-ultra-light-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "accent-ultra-light-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "accent-light": {
+                                    "type": "group",
+                                    "title": "Light",
+                                    "content": {
+                                        "accent-light-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "accent-light-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "accent-medium": {
+                                    "type": "group",
+                                    "title": "Medium",
+                                    "content": {
+                                        "accent-medium-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "accent-medium-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "accent-dark": {
+                                    "type": "group",
+                                    "title": "Dark",
+                                    "content": {
+                                        "accent-dark-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "accent-dark-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "accent-ultra-dark": {
+                                    "type": "group",
+                                    "title": "Ultra Dark",
+                                    "content": {
+                                        "accent-ultra-dark-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "accent-ultra-dark-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "base": {
+                    "type": "panel",
+                    "title": "Base",
+                    "tooltip": "Typically the darkest color or background color for the website.",
+                    "variable": "color-base",
+                    "content": {
+                        "base-shades": {
+                            "type": "accordion",
+                            "title": "Edit Base Shades",
+                            "description": "Adjust each shade’s saturation and lightness value. Higher values provide more saturation/lightness and lower values provide less.",
+                            "content": {
+                                "base-hover": {
+                                    "type": "group",
+                                    "title": "Hover",
+                                    "content": {
+                                        "base-hover-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "base-hover-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "base-ultra-light": {
+                                    "type": "group",
+                                    "title": "Ultra Light",
+                                    "content": {
+                                        "base-ultra-light-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "base-ultra-light-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "base-light": {
+                                    "type": "group",
+                                    "title": "Light",
+                                    "content": {
+                                        "base-light-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "base-light-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "base-medium": {
+                                    "type": "group",
+                                    "title": "Medium",
+                                    "content": {
+                                        "base-medium-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "base-medium-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "base-dark": {
+                                    "type": "group",
+                                    "title": "Dark",
+                                    "content": {
+                                        "base-dark-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "base-dark-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "base-ultra-dark": {
+                                    "type": "group",
+                                    "title": "Ultra Dark",
+                                    "content": {
+                                        "base-ultra-dark-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "base-ultra-dark-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "shade": {
+                    "type": "panel",
+                    "title": "Shade",
+                    "tooltip": "Default black base. Adjust if you want to slightly change its hue. Adjustments won't effect \"white\" or \"black\" classes.",
+                    "variable": "color-shade",
+                    "content": {
+                        "shade-shades": {
+                            "type": "accordion",
+                            "title": "Edit Shades",
+                            "description": "Adjust each shade’s saturation and lightness value. Higher values provide more saturation/lightness and lower values provide less.",
+                            "content": {
+                                "shade-hover": {
+                                    "type": "group",
+                                    "title": "Hover",
+                                    "content": {
+                                        "shade-hover-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "shade-hover-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "shade-ultra-light": {
+                                    "type": "group",
+                                    "title": "Ultra Light",
+                                    "content": {
+                                        "shade-ultra-light-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "shade-ultra-light-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "shade-light": {
+                                    "type": "group",
+                                    "title": "Light",
+                                    "content": {
+                                        "shade-light-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "shade-light-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "shade-medium": {
+                                    "type": "group",
+                                    "title": "Medium",
+                                    "content": {
+                                        "shade-medium-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "shade-medium-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "shade-dark": {
+                                    "type": "group",
+                                    "title": "Dark",
+                                    "content": {
+                                        "shade-dark-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "shade-dark-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                },
+                                "shade-ultra-dark": {
+                                    "type": "group",
+                                    "title": "Ultra Dark",
+                                    "content": {
+                                        "shade-ultra-dark-s": {
+                                            "type": "variable",
+                                            "unit": "S"
+                                        },
+                                        "shade-ultra-dark-l": {
+                                            "type": "variable",
+                                            "unit": "L"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "typography": {
+            "title": "Typography",
+            "description": "Fluid responsive headings & text.",
+            "content": {
+                "root-font-size": {
+                    "type": "panel",
+                    "title": "Root Font Size",
+                    "tooltip": "Typically 100% or 62.5%. <a target=\"_blank\" href=\"https://community.automaticcss.com/c/setup/manual-typography-overrides\">See documentation</a> ",
+                    "variable": "root-font-size"
+                },
+                "fluid-text": {
+                    "type": "panel",
+                    "title": "Fluid Text Sizing",
+                    "tooltip": "",
+                    "content": {
+                        "base-size": {
+                            "type": "group",
+                            "title": "Base Text Size",
+                            "tooltip": "Set the base min & max values for fluid text.",
+                            "content": {
+                                "base-text-mob": {
+                                    "type": "variable",
+                                    "unit": "px"
+                                },
+                                "base-text-desk": {
+                                    "type": "variable",
+                                    "unit": "px"
+                                }
+                            }
+                        },
+                        "text-scale": {
+                            "type": "variable",
+                            "title": "Desktop Scale",
+                            "tooltip": "The degree of change between text sizes on desktop."
+                        },
+                        "text-scale-custom": {
+                            "type": "variable",
+                            "title": "Custom Desktop Scale",
+                            "tooltip": "Set your own mathematical desktop scale value."
+                        },
+                        "mob-text-scale": {
+                            "type": "variable",
+                            "title": "Mobile Scale",
+                            "tooltip": "The degree of change between text sizes on mobile."
+                        },
+                        "mob-text-scale-custom": {
+                            "type": "variable",
+                            "title": "Custom Mobile Scale",
+                            "tooltip": "Set your own mathematical mobile scale value."
+                        },
+                        "text-minimums": {
+                            "type": "accordion",
+                            "title": "Text Minimums",
+                            "tooltip": "",
+                            "description": "Set minimum sizes for 'S' and 'XS' so they don't get too small (important for accessibility). ACSS will never let these sizes go below these values.",
+                            "content": {
+                                "text-s-stop": {
+                                    "type": "variable",
+                                    "title": "\"S\" Minimum",
+                                    "tooltip": ""
+                                },
+                                "text-xs-stop": {
+                                    "type": "variable",
+                                    "title": "\"XS\" Minimum",
+                                    "tooltip": ""
+                                }
+                            }
+                        },
+                        "text-overrides-accordion": {
+                            "type": "accordion",
+                            "title": "Text Overrides",
+                            "tooltip": "Enter the minimum value (mobile size) in the first input and the maximum value (desktop size) in the second input.",
+                            "description": "Enter the minimum value (mobile size) in the first input and the maximum value (desktop size) in the second input.",
+                            "content": {
+                                "xxl-overrides": {
+                                    "type": "group",
+                                    "title": "XXL",
+                                    "content": {
+                                        "text-xxl-min": {
+                                            "type": "variable",
+                                            "title": "\"XXL\" Text Size (Mobile)",
+                                            "tooltip": "Input the smallest size you want \"XXL\" text to be on mobile devices.",
+                                            "unit": "px",
+                                            "placeholder": "min"
+                                        },
+                                        "text-xxl-max": {
+                                            "type": "variable",
+                                            "title": "\"XXL\" Text Size (Desktop)",
+                                            "tooltip": "Input the largest size you want \"XXL\" text to be on desktop devices.",
+                                            "unit": "px",
+                                            "placeholder": "max"
+                                        }
+                                    }
+                                },
+                                "xl-overrides": {
+                                    "type": "group",
+                                    "title": "XL",
+                                    "content": {
+                                        "text-xl-min": {
+                                            "type": "variable",
+                                            "title": "\"XL\" Text Size (Mobile)",
+                                            "tooltip": "Input the smallest size you want \"XL\" text to be on mobile devices.",
+                                            "unit": "px",
+                                            "placeholder": "min"
+                                        },
+                                        "text-xl-max": {
+                                            "type": "variable",
+                                            "title": "\"XL\" Text Size (Desktop)",
+                                            "tooltip": "Input the largest size you want \"XL\" text to be on desktop devices.",
+                                            "unit": "px",
+                                            "placeholder": "max"
+                                        }
+                                    }
+                                },
+                                "l-overrides": {
+                                    "type": "group",
+                                    "title": "L",
+                                    "content": {
+                                        "text-l-min": {
+                                            "type": "variable",
+                                            "title": "\"L\" Text Size (Mobile)",
+                                            "tooltip": "Input the smallest size you want \"L\" text to be on mobile devices.",
+                                            "unit": "px",
+                                            "placeholder": "min"
+                                        },
+                                        "text-l-max": {
+                                            "type": "variable",
+                                            "title": "\"L\" Text Size (Desktop)",
+                                            "tooltip": "Input the largest size you want \"L\" text to be on desktop devices.",
+                                            "unit": "px",
+                                            "placeholder": "max"
+                                        }
+                                    }
+                                },
+                                "m-overrides": {
+                                    "type": "group",
+                                    "title": "M",
+                                    "content": {
+                                        "text-m-min": {
+                                            "type": "variable",
+                                            "title": "\"M\" Text Size (Mobile)",
+                                            "tooltip": "Input the smallest size you want \"M\" text to be on mobile devices.",
+                                            "unit": "px",
+                                            "placeholder": "min"
+                                        },
+                                        "text-m-max": {
+                                            "type": "variable",
+                                            "title": "\"M\" Text Size (Desktop)",
+                                            "tooltip": "Input the largest size you want \"M\" text to be on desktop devices.",
+                                            "unit": "px",
+                                            "placeholder": "max"
+                                        }
+                                    }
+                                },
+                                "s-overrides": {
+                                    "type": "group",
+                                    "title": "S",
+                                    "content": {
+                                        "text-s-min": {
+                                            "type": "variable",
+                                            "title": "\"S\" Text Size (Mobile)",
+                                            "tooltip": "Input the smallest size you want \"S\" text to be on mobile devices.",
+                                            "unit": "px",
+                                            "placeholder": "min"
+                                        },
+                                        "text-s-max": {
+                                            "type": "variable",
+                                            "title": "\"S\" Text Size (Desktop)",
+                                            "tooltip": "Input the largest size you want \"S\" text to be on desktop devices.",
+                                            "unit": "px",
+                                            "placeholder": "max"
+                                        }
+                                    }
+                                },
+                                "xs-overrides": {
+                                    "type": "group",
+                                    "title": "XS",
+                                    "content": {
+                                        "text-xs-min": {
+                                            "type": "variable",
+                                            "title": "\"S\" Text Size (Mobile)",
+                                            "tooltip": "Input the smallest size you want \"XS\" text to be on mobile devices.",
+                                            "unit": "px",
+                                            "placeholder": "min"
+                                        },
+                                        "text-xs-max": {
+                                            "type": "variable",
+                                            "title": "\"S\" Text Size (Desktop)",
+                                            "tooltip": "Input the largest size you want \"XS\" text to be on desktop devices.",
+                                            "unit": "px",
+                                            "placeholder": "max"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "fluid-headings": {
+                    "type": "panel",
+                    "title": "Fluid Heading Sizing",
+                    "tooltip": "",
+                    "content": {
+                        "base-size": {
+                            "type": "group",
+                            "title": "Base Heading Size",
+                            "tooltip": "Set the base min & max values for fluid headings.",
+                            "content": {
+                                "base-heading-mob": {
+                                    "type": "variable",
+                                    "unit": "px"
+                                },
+                                "base-heading-desk": {
+                                    "type": "variable",
+                                    "unit": "px"
+                                }
+                            }
+                        },
+                        "heading-scale": {
+                            "type": "variable",
+                            "title": "Desktop Scale",
+                            "tooltip": "The degree of change between heading sizes on desktop."
+                        },
+                        "heading-scale-custom": {
+                            "type": "variable",
+                            "title": "Custom Desktop Scale",
+                            "tooltip": "Set your own mathematical desktop scale value."
+                        },
+                        "mob-heading-scale": {
+                            "type": "variable",
+                            "title": "Mobile Scale",
+                            "tooltip": "The degree of change between heading sizes on mobile."
+                        },
+                        "mob-heading-scale-custom": {
+                            "type": "variable",
+                            "title": "Custom Mobile Scale",
+                            "tooltip": "Set your own mathematical mobile scale value."
+                        },
+                        "heading-minimums": {
+                            "type": "accordion",
+                            "title": "Heading Minimums",
+                            "tooltip": "",
+                            "description": "Set minimum sizes for H5 and H6 so they don't get too small (important for accessibility). ACSS will never let these sizes go below these values.",
+                            "content": {
+                                "h5-stop": {
+                                    "type": "variable",
+                                    "title": "H5 Minimum",
+                                    "tooltip": ""
+                                },
+                                "h6-stop": {
+                                    "type": "variable",
+                                    "title": "H6 Minimum",
+                                    "tooltip": ""
+                                }
+                            }
+                        },
+                        "heading-overrides-accordion": {
+                            "type": "accordion",
+                            "title": "Heading Overrides",
+                            "tooltip": "Enter the minimum value (mobile size) in the first input and the maximum value (desktop size) in the second input.",
+                            "description": "Enter the minimum value (mobile size) in the first input and the maximum value (desktop size) in the second input.",
+                            "content": {
+                                "h1-overrides": {
+                                    "type": "group",
+                                    "title": "H1",
+                                    "content": {
+                                        "h1-min": {
+                                            "type": "variable",
+                                            "title": "H1 Text Size (Mobile)",
+                                            "tooltip": "Input the smallest size H1 headings to be on mobile devices.",
+                                            "unit": "px",
+                                            "placeholder": "min"
+                                        },
+                                        "h1-max": {
+                                            "type": "variable",
+                                            "title": "H1 Text Size (Desktop)",
+                                            "tooltip": "Input the largest size H1 headings to be on desktop devices.",
+                                            "unit": "px",
+                                            "placeholder": "max"
+                                        }
+                                    }
+                                },
+                                "h2-overrides": {
+                                    "type": "group",
+                                    "title": "H2",
+                                    "content": {
+                                        "h2-min": {
+                                            "type": "variable",
+                                            "title": "H2 Text Size (Mobile)",
+                                            "tooltip": "Input the smallest size you want H2 headings to be on mobile devices.",
+                                            "unit": "px",
+                                            "placeholder": "min"
+                                        },
+                                        "h2-max": {
+                                            "type": "variable",
+                                            "title": "H2 Text Size (Desktop)",
+                                            "tooltip": "Input the largest size you want H2 headings to be on desktop devices.",
+                                            "unit": "px",
+                                            "placeholder": "max"
+                                        }
+                                    }
+                                },
+                                "h3-overrides": {
+                                    "type": "group",
+                                    "title": "H3",
+                                    "content": {
+                                        "h3-min": {
+                                            "type": "variable",
+                                            "title": "H3 Text Size (Mobile)",
+                                            "tooltip": "Input the smallest size you want H3 headings to be on mobile devices.",
+                                            "unit": "px",
+                                            "placeholder": "min"
+                                        },
+                                        "h3-max": {
+                                            "type": "variable",
+                                            "title": "H3 Text Size (Desktop)",
+                                            "tooltip": "Input the largest size you want H3 headings to be on desktop devices.",
+                                            "unit": "px",
+                                            "placeholder": "max"
+                                        }
+                                    }
+                                },
+                                "h4-overrides": {
+                                    "type": "group",
+                                    "title": "H4",
+                                    "content": {
+                                        "h4-min": {
+                                            "type": "variable",
+                                            "title": "H4 Text Size (Mobile)",
+                                            "tooltip": "Input the smallest size you want H4 headings to be on mobile devices.",
+                                            "unit": "px",
+                                            "placeholder": "min"
+                                        },
+                                        "h4-max": {
+                                            "type": "variable",
+                                            "title": "H4 Text Size (Desktop)",
+                                            "tooltip": "Input the largest size you want H4 headings to be on desktop devices.",
+                                            "unit": "px",
+                                            "placeholder": "max"
+                                        }
+                                    }
+                                },
+                                "h5-overrides": {
+                                    "type": "group",
+                                    "title": "H5",
+                                    "content": {
+                                        "h5-min": {
+                                            "type": "variable",
+                                            "title": "H5 Text Size (Mobile)",
+                                            "tooltip": "Input the smallest size you want H5 headings to be on mobile devices.",
+                                            "unit": "px",
+                                            "placeholder": "min"
+                                        },
+                                        "h5-max": {
+                                            "type": "variable",
+                                            "title": "H5 Text Size (Desktop)",
+                                            "tooltip": "Input the largest size you want H5 headings to be on desktop devices.",
+                                            "unit": "px",
+                                            "placeholder": "max"
+                                        }
+                                    }
+                                },
+                                "h6-overrides": {
+                                    "type": "group",
+                                    "title": "H6",
+                                    "content": {
+                                        "h6-min": {
+                                            "type": "variable",
+                                            "title": "H6 Text Size (Mobile)",
+                                            "tooltip": "Input the smallest size you want H6 headings to be on mobile devices.",
+                                            "unit": "px",
+                                            "placeholder": "min"
+                                        },
+                                        "h6-max": {
+                                            "type": "variable",
+                                            "title": "H6 Text Size (Desktop)",
+                                            "tooltip": "Input the largest size you want H6 headings to be on desktop devices.",
+                                            "unit": "px",
+                                            "placeholder": "max"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "Body Styling": {
+                    "type": "panel",
+                    "title": "Body Styling",
+                    "tooltip": "",
+                    "content": {
+                        "body-bg-color": {
+                            "type": "variable",
+                            "title": "Body Background Color",
+                            "tooltip": "Set the default background color for your website (ACSS variable recommended)."
+                        },
+                        "body-color": {
+                            "type": "variable",
+                            "title": "Body Text Color",
+                            "tooltip": "Set the default body text color for your website (ACSS variable recommended).",
+                            "placeholder": "var(--base)"
+                        },
+                        "base-text-lh": {
+                            "type": "variable",
+                            "title": "Body Line Height",
+                            "tooltip": ""
+                        },
+                        "text-line-length": {
+                            "type": "variable",
+                            "title": "Body Line Length",
+                            "tooltip": "Sets the maximum text line length for paragraphs to a specific number of characters (ch value recommended)."
+                        }
+                    }
+                },
+                "heading-styling": {
+                    "type": "panel",
+                    "title": "Heading Styling",
+                    "tooltip": "",
+                    "content": {
+                        "heading-colors": {
+                            "type": "accordion",
+                            "title": "Heading Colors",
+                            "tooltip": "",
+                            "description": "Set default colors for each heading level using an ACSS variable. If no color is set, headings will default to black.",
+                            "content": {
+                                "h1-color": {
+                                    "type": "variable",
+                                    "title": "H1",
+                                    "tooltip": "",
+                                    "placeholder": "var(--base)"
+                                },
+                                "h2-color": {
+                                    "type": "variable",
+                                    "title": "H2",
+                                    "tooltip": "",
+                                    "placeholder": "var(--base)"
+                                },
+                                "h3-color": {
+                                    "type": "variable",
+                                    "title": "H3",
+                                    "tooltip": "",
+                                    "placeholder": "var(--base)"
+                                },
+                                "h4-color": {
+                                    "type": "variable",
+                                    "title": "H4",
+                                    "tooltip": "",
+                                    "placeholder": "var(--base)"
+                                },
+                                "h5-color": {
+                                    "type": "variable",
+                                    "title": "H5",
+                                    "tooltip": "",
+                                    "placeholder": "var(--base)"
+                                },
+                                "h6-color": {
+                                    "type": "variable",
+                                    "title": "H6",
+                                    "tooltip": "",
+                                    "placeholder": "var(--base)"
+                                }
+                            }
+                        },
+                        "heading-line-heights": {
+                            "type": "accordion",
+                            "title": "Heading Line Heights",
+                            "tooltip": "",
+                            "description": "Set minimum sizes for H5 and H6 so they don't get too small (important for accessibility). ACSS will never let these sizes go below these values.",
+                            "content": {
+                                "h1-lh": {
+                                    "type": "variable",
+                                    "title": "H1",
+                                    "tooltip": ""
+                                },
+                                "h2-lh": {
+                                    "type": "variable",
+                                    "title": "H2",
+                                    "tooltip": ""
+                                },
+                                "h3-lh": {
+                                    "type": "variable",
+                                    "title": "H3",
+                                    "tooltip": ""
+                                },
+                                "h4-lh": {
+                                    "type": "variable",
+                                    "title": "H4",
+                                    "tooltip": ""
+                                },
+                                "h5-lh": {
+                                    "type": "variable",
+                                    "title": "H5",
+                                    "tooltip": ""
+                                },
+                                "h6-lh": {
+                                    "type": "variable",
+                                    "title": "H6",
+                                    "tooltip": ""
+                                }
+                            }
+                        },
+                        "heading-line-length": {
+                            "type": "variable",
+                            "title": "Heading Line Length",
+                            "tooltip": "Sets the maximum heading line length to a specific number of characters (ch value recommended)."
+                        }
+                    }
+                },
+                "text-multiplier": {
+                    "type": "panel",
+                    "title": "'Larger' Multiplier",
+                    "tooltip": "",
+                    "content": {
+                        "multiplier-values": {
+                            "type": "group",
+                            "title": "Text Larger",
+                            "tooltip": "Sets a min and max for the 'text--larger' class",
+                            "content": {
+                                "text-multiplier-min": {
+                                    "type": "variable"
+                                },
+                                "text-multiplier": {
+                                    "type": "variable"
+                                }
+                            }
+                        }
+                    }
+                },
+                "text-size-fallbacks": {
+                    "type": "panel",
+                    "title": "Fallbacks",
+                    "tooltip": "Controls text & heading sizes on devices that don't support calc() or clamp().",
+                    "content": {
+                        "fallbacks-accordion": {
+                            "type": "accordion",
+                            "title": "Edit Fallbacks",
+                            "content": {
+                                "text-xxl-pure": {
+                                    "type": "variable",
+                                    "title": "XXL/H1",
+                                    "tooltip": ""
+                                },
+                                "text-xl-pure": {
+                                    "type": "variable",
+                                    "title": "XL/H2",
+                                    "tooltip": ""
+                                },
+                                "text-l-pure": {
+                                    "type": "variable",
+                                    "title": "L/H3",
+                                    "tooltip": ""
+                                },
+                                "text-m-pure": {
+                                    "type": "variable",
+                                    "title": "M/H4",
+                                    "tooltip": ""
+                                },
+                                "text-s-pure": {
+                                    "type": "variable",
+                                    "title": "S/H5",
+                                    "tooltip": ""
+                                },
+                                "text-xs-pure": {
+                                    "type": "variable",
+                                    "title": "XS/H6",
+                                    "tooltip": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "spacing": {
+            "title": "Spacing",
+            "description": "Fluid responsive spacing.",
+            "content": {
+                "main-spacing-system": {
+                    "type": "panel",
+                    "title": "Main Spacing",
+                    "tooltip": "",
+                    "content": {
+                        "base-spacing": {
+                            "type": "group",
+                            "title": "Base Spacing",
+                            "tooltip": "Set the min & max values for fluid margin, padding, and gaps.",
+                            "content": {
+                                "base-space-min": {
+                                    "type": "variable",
+                                    "title": "Base Spacing (Mobile)",
+                                    "tooltip": "",
+                                    "unit": "px"
+                                },
+                                "base-space": {
+                                    "type": "variable",
+                                    "title": "Base Spacing",
+                                    "tooltip": "",
+                                    "unit": "px"
+                                }
+                            }
+                        },
+                        "space-scale": {
+                            "type": "variable",
+                            "title": "Desktop Scale",
+                            "tooltip": "The degree of change between spacing sizes on desktop."
+                        },
+                        "space-scale-custom": {
+                            "type": "variable",
+                            "title": "Custom Desktop Scale",
+                            "tooltip": "Set your own mathematical scale value."
+                        },
+                        "mob-space-scale": {
+                            "type": "variable",
+                            "title": "Mobile Scale",
+                            "tooltip": "The degree of change between spacing sizes on mobile."
+                        },
+                        "mob-space-scale-custom": {
+                            "type": "variable",
+                            "title": "Custom Mobile Scale",
+                            "tooltip": "Set your own mathematical mobile scale value."
+                        }
+                    }
+                },
+                "section-spacing-system": {
+                    "type": "panel",
+                    "title": "Section Spacing",
+                    "tooltip": "",
+                    "content": {
+                        "space-adjust-section": {
+                            "type": "variable",
+                            "title": "Base Multiplier (Desktop)",
+                            "tooltip": "Controls top & bottom section padding on desktop by multiplying Base Spacing."
+                        },
+                        "mob-space-adjust-section": {
+                            "type": "variable",
+                            "title": "Base Multiplier (Mobile)",
+                            "tooltip": "Controls top & bottom section padding at the minimum device size by multiplying Base Spacing."
+                        },
+                        "left-right-padding": {
+                            "type": "group",
+                            "title": "Side Padding",
+                            "tooltip": "Set the min & max values for fluid left & right section padding.",
+                            "content": {
+                                "section-padding-x-min": {
+                                    "type": "variable",
+                                    "title": "Left/Right Section Padding (min)",
+                                    "tooltip": "Set a min value for responsive left/right section padding. This determines the distance between your content and the edge of the screen on laptops and mobile devices.",
+                                    "unit": "px"
+                                },
+                                "section-padding-x-max": {
+                                    "type": "variable",
+                                    "title": "Left/Right Section Padding (max)",
+                                    "tooltip": "Set a max value for responsive left/right section padding. This determines the distance between your content and the edge of the screen on laptops and mobile devices.",
+                                    "unit": "px"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "buttons": {
+            "title": "Buttons & Links",
+            "description": "Global button & link styling.",
+            "content": {
+                "button-defaults": {
+                    "type": "panel",
+                    "title": "Button Defaults",
+                    "tooltip": "",
+                    "content": {
+                        "option-btn-text-size": {
+                            "type": "variable",
+                            "title": "Custom Button Text Size",
+                            "tooltip": "By default, button text inherits the \"M\" text size. Turn this setting on to set a custom text size for buttons."
+                        },
+                        "btn-text": {
+                            "type": "group",
+                            "title": "Text Size",
+                            "tooltip": "Set a mobile font size (1st field) and desktop font size (2nd field).",
+                            "content": {
+                                "btn-text-min": {
+                                    "type": "variable",
+                                    "title": "Font-Size (mobile)",
+                                    "tooltip": "Set a minimum value for responsive default text sizing on buttons."
+                                },
+                                "btn-text-max": {
+                                    "type": "variable",
+                                    "title": "Font-Size (desktop)",
+                                    "tooltip": "Set a maximum value for responsive default text sizing on buttons."
+                                }
+                            }
+                        },
+                        "btn-line-height": {
+                            "type": "variable",
+                            "title": "Button Line Height",
+                            "tooltip": ""
+                        },
+                        "btn-letter-spacing": {
+                            "type": "variable",
+                            "title": "Letter Spacing",
+                            "tooltip": "Use a value & unit (e.g. .025em)"
+                        },
+                        "btn-weight": {
+                            "type": "variable",
+                            "title": "Button Font Weight",
+                            "tooltip": ""
+                        },
+                        "btn-text-transform": {
+                            "type": "variable",
+                            "title": "Text Transform",
+                            "tooltip": ""
+                        },
+                        "btn-width": {
+                            "type": "variable",
+                            "title": "Button Width",
+                            "tooltip": "Set the minimum width of all button styles."
+                        },
+                        "button-padding": {
+                            "type": "group",
+                            "title": "Padding",
+                            "tooltip": "Set top/bottom & left/right button padding. Accepts any units (\"em\" recommended).",
+                            "content": {
+                                "btn-pad-y": {
+                                    "type": "variable",
+                                    "title": "Top/Bottom Button Padding",
+                                    "tooltip": "Adjust the vertical padding on buttons.",
+                                    "unit": "y"
+                                },
+                                "btn-pad-x": {
+                                    "type": "variable",
+                                    "title": "Left/Right Button Padding",
+                                    "tooltip": "Adjust the horizontal padding on buttons.",
+                                    "unit": "x"
+                                }
+                            }
+                        },
+                        "btn-border-size": {
+                            "type": "variable",
+                            "title": "Button Border Size",
+                            "tooltip": ""
+                        },
+                        "outline-btn-border-size": {
+                            "type": "variable",
+                            "title": "Outline Button Border Size",
+                            "tooltip": ""
+                        },
+                        "btn-radius": {
+                            "type": "variable",
+                            "title": "Button Radius",
+                            "tooltip": "Use an ACSS radius variable or any value with a unit (\"em\" recommended)."
+                        }
+                    }
+                },
+                "link-defaults": {
+                    "type": "panel",
+                    "title": "Link Defaults",
+                    "tooltip": "Set default styling for links.",
+                    "content": {
+                        "link-color": {
+                            "type": "variable",
+                            "title": "Link Color",
+                            "tooltip": ""
+                        },
+                        "link-color-hover": {
+                            "type": "variable",
+                            "title": "Link Hover Color",
+                            "tooltip": ""
+                        },
+                        "link-weight": {
+                            "type": "variable",
+                            "title": "Link Weight",
+                            "tooltip": ""
+                        },
+                        "link-decoration": {
+                            "type": "variable",
+                            "title": "Link Decoration",
+                            "tooltip": ""
+                        }
+                    }
+                },
+                "primary-button": {
+                    "type": "panel",
+                    "title": "Primary Button",
+                    "tooltip": "",
+                    "content": {
+                        "primary-button-accordion": {
+                            "type": "accordion",
+                            "title": "Edit Primary Button Styling",
+                            "content": {
+                                "btn-primary-bg": {
+                                    "type": "variable",
+                                    "title": "Background Color",
+                                    "tooltip": ""
+                                },
+                                "btn-primary-hover": {
+                                    "type": "variable",
+                                    "title": "Hover Background Color",
+                                    "tooltip": ""
+                                },
+                                "btn-primary-text": {
+                                    "type": "variable",
+                                    "title": "Text Color",
+                                    "tooltip": ""
+                                },
+                                "btn-primary-hover-text": {
+                                    "type": "variable",
+                                    "title": "Hover Text Color",
+                                    "tooltip": ""
+                                },
+                                "btn-primary-border-color": {
+                                    "type": "variable",
+                                    "title": "Border Color",
+                                    "tooltip": ""
+                                },
+                                "btn-primary-hover-border-color": {
+                                    "type": "variable",
+                                    "title": "Hover Border Color",
+                                    "tooltip": ""
+                                },
+                                "primary-outline-btn-text": {
+                                    "type": "variable",
+                                    "title": "Outline Text Color",
+                                    "tooltip": ""
+                                },
+                                "primary-outline-hover-text": {
+                                    "type": "variable",
+                                    "title": "Outline Hover Text Color",
+                                    "tooltip": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "secondary-button": {
+                    "type": "panel",
+                    "title": "Secondary Button",
+                    "tooltip": "",
+                    "content": {
+                        "secondary-button-accordion": {
+                            "type": "accordion",
+                            "title": "Edit Secondary Button Styling",
+                            "content": {
+                                "btn-secondary-bg": {
+                                    "type": "variable",
+                                    "title": "Background Color",
+                                    "tooltip": ""
+                                },
+                                "btn-secondary-hover": {
+                                    "type": "variable",
+                                    "title": "Hover Background Color",
+                                    "tooltip": ""
+                                },
+                                "btn-secondary-text": {
+                                    "type": "variable",
+                                    "title": "Text Color",
+                                    "tooltip": ""
+                                },
+                                "btn-secondary-hover-text": {
+                                    "type": "variable",
+                                    "title": "Hover Text Color",
+                                    "tooltip": ""
+                                },
+                                "btn-secondary-border-color": {
+                                    "type": "variable",
+                                    "title": "Border Color",
+                                    "tooltip": ""
+                                },
+                                "btn-secondary-hover-border-color": {
+                                    "type": "variable",
+                                    "title": "Hover Border Color",
+                                    "tooltip": ""
+                                },
+                                "secondary-outline-btn-text": {
+                                    "type": "variable",
+                                    "title": "Outline Text Color",
+                                    "tooltip": ""
+                                },
+                                "secondary-outline-hover-text": {
+                                    "type": "variable",
+                                    "title": "Outline Hover Text Color",
+                                    "tooltip": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "accent-button": {
+                    "type": "panel",
+                    "title": "Accent Button",
+                    "tooltip": "",
+                    "content": {
+                        "accent-button-accordion": {
+                            "type": "accordion",
+                            "title": "Edit Accent Button Styling",
+                            "content": {
+                                "btn-accent-bg": {
+                                    "type": "variable",
+                                    "title": "Background Color",
+                                    "tooltip": ""
+                                },
+                                "btn-accent-hover": {
+                                    "type": "variable",
+                                    "title": "Hover Background Color",
+                                    "tooltip": ""
+                                },
+                                "btn-accent-text": {
+                                    "type": "variable",
+                                    "title": "Text Color",
+                                    "tooltip": ""
+                                },
+                                "btn-accent-hover-text": {
+                                    "type": "variable",
+                                    "title": "Hover Text Color",
+                                    "tooltip": ""
+                                },
+                                "btn-accent-border-color": {
+                                    "type": "variable",
+                                    "title": "Border Color",
+                                    "tooltip": ""
+                                },
+                                "btn-accent-hover-border-color": {
+                                    "type": "variable",
+                                    "title": "Hover Border Color",
+                                    "tooltip": ""
+                                },
+                                "accent-outline-btn-text": {
+                                    "type": "variable",
+                                    "title": "Outline Text Color",
+                                    "tooltip": ""
+                                },
+                                "accent-outline-hover-text": {
+                                    "type": "variable",
+                                    "title": "Outline Hover Text Color",
+                                    "tooltip": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "base-button": {
+                    "type": "panel",
+                    "title": "Base Button",
+                    "tooltip": "",
+                    "content": {
+                        "base-button-accordion": {
+                            "type": "accordion",
+                            "title": "Edit Base Button Styling",
+                            "content": {
+                                "btn-base-bg": {
+                                    "type": "variable",
+                                    "title": "Background Color",
+                                    "tooltip": ""
+                                },
+                                "btn-base-hover": {
+                                    "type": "variable",
+                                    "title": "Hover Background Color",
+                                    "tooltip": ""
+                                },
+                                "btn-base-text": {
+                                    "type": "variable",
+                                    "title": "Text Color",
+                                    "tooltip": ""
+                                },
+                                "btn-base-hover-text": {
+                                    "type": "variable",
+                                    "title": "Hover Text Color",
+                                    "tooltip": ""
+                                },
+                                "btn-base-border-color": {
+                                    "type": "variable",
+                                    "title": "Border Color",
+                                    "tooltip": ""
+                                },
+                                "btn-base-hover-border-color": {
+                                    "type": "variable",
+                                    "title": "Hover Border Color",
+                                    "tooltip": ""
+                                },
+                                "base-outline-btn-text": {
+                                    "type": "variable",
+                                    "title": "Outline Text Color",
+                                    "tooltip": ""
+                                },
+                                "base-outline-hover-text": {
+                                    "type": "variable",
+                                    "title": "Outline Hover Text Color",
+                                    "tooltip": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "black-button": {
+                    "type": "panel",
+                    "title": "Black Button",
+                    "tooltip": "",
+                    "content": {
+                        "black-button-accordion": {
+                            "type": "accordion",
+                            "title": "Edit Black Button Styling",
+                            "content": {
+                                "btn-black-bg": {
+                                    "type": "variable",
+                                    "title": "Background Color",
+                                    "tooltip": ""
+                                },
+                                "btn-black-hover": {
+                                    "type": "variable",
+                                    "title": "Hover Background Color",
+                                    "tooltip": ""
+                                },
+                                "btn-black-text": {
+                                    "type": "variable",
+                                    "title": "Text Color",
+                                    "tooltip": ""
+                                },
+                                "btn-black-hover-text": {
+                                    "type": "variable",
+                                    "title": "Hover Text Color",
+                                    "tooltip": ""
+                                },
+                                "btn-black-border-color": {
+                                    "type": "variable",
+                                    "title": "Border Color",
+                                    "tooltip": ""
+                                },
+                                "btn-black-hover-border-color": {
+                                    "type": "variable",
+                                    "title": "Hover Border Color",
+                                    "tooltip": ""
+                                },
+                                "black-outline-btn-text": {
+                                    "type": "variable",
+                                    "title": "Outline Text Color",
+                                    "tooltip": ""
+                                },
+                                "black-outline-hover-text": {
+                                    "type": "variable",
+                                    "title": "Outline Hover Text Color",
+                                    "tooltip": ""
+                                }
+                            }
+                        }
+                    }
+                },
+                "white-button": {
+                    "type": "panel",
+                    "title": "White Button",
+                    "tooltip": "",
+                    "content": {
+                        "white-button-accordion": {
+                            "type": "accordion",
+                            "title": "Edit White Button Styling",
+                            "content": {
+                                "btn-white-bg": {
+                                    "type": "variable",
+                                    "title": "Background Color",
+                                    "tooltip": ""
+                                },
+                                "btn-white-hover": {
+                                    "type": "variable",
+                                    "title": "Hover Background Color",
+                                    "tooltip": ""
+                                },
+                                "btn-white-text": {
+                                    "type": "variable",
+                                    "title": "Text Color",
+                                    "tooltip": ""
+                                },
+                                "btn-white-hover-text": {
+                                    "type": "variable",
+                                    "title": "Hover Text Color",
+                                    "tooltip": ""
+                                },
+                                "btn-white-border-color": {
+                                    "type": "variable",
+                                    "title": "Border Color",
+                                    "tooltip": ""
+                                },
+                                "btn-white-hover-border-color": {
+                                    "type": "variable",
+                                    "title": "Hover Border Color",
+                                    "tooltip": ""
+                                },
+                                "white-outline-btn-text": {
+                                    "type": "variable",
+                                    "title": "Outline Text Color",
+                                    "tooltip": ""
+                                },
+                                "white-outline-hover-text": {
+                                    "type": "variable",
+                                    "title": "Outline Hover Text Color",
+                                    "tooltip": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "additional-styling": {
+            "title": "Additional Styling",
+            "description": "More styling settings.",
+            "content": {
+                "accessibility": {
+                    "type": "panel",
+                    "title": "Accessibility",
+                    "tooltip": "",
+                    "content": {
+                        "focus-color": {
+                            "type": "variable",
+                            "title": "Focus Outline Color",
+                            "tooltip": ""
+                        },
+                        "focus-offset": {
+                            "type": "variable",
+                            "title": "Focus Outline Offset",
+                            "tooltip": ""
+                        }
+                    }
+                },
+                "radius-system": {
+                    "type": "panel",
+                    "title": "Radius System",
+                    "tooltip": "",
+                    "content": {
+                        "base-radius": {
+                            "type": "variable",
+                            "title": "Base Radius",
+                            "tooltip": "Set the base radius for classes (.rounded) and variables (--radius)."
+                        },
+                        "radius-scale": {
+                            "type": "variable",
+                            "title": "Radius Scale",
+                            "tooltip": "Controls the degree of change between radius sizes."
+                        }
+                    }
+                },
+                "sticky": {
+                    "type": "panel",
+                    "title": "Sticky Settings",
+                    "tooltip": "Adjust the distance from top for sticky elements. Accepts values with units, calcs, or variables. <a href=\"https://community.automaticcss.com/c/classes/position-classes-sticky\" target=\"_blank\">See documentation</a>",
+                    "content": {
+                        "option-sticky-offset": {
+                            "type": "variable",
+                            "title": "Offset Sticky Elements Automatically",
+                            "tooltip": "Use scroll offset value for sticky elements?"
+                        },
+                        "sticky-top-s": {
+                            "type": "variable",
+                            "title": "Top Margin (Small)",
+                            "tooltip": ""
+                        },
+                        "sticky-top-m": {
+                            "type": "variable",
+                            "title": "Top Margin (Medium)",
+                            "tooltip": ""
+                        },
+                        "sticky-top-l": {
+                            "type": "variable",
+                            "title": "Top Margin (Large)",
+                            "tooltip": ""
+                        }
+                    }
+                },
+                "columns": {
+                    "type": "panel",
+                    "title": "Columns",
+                    "tooltip": "Adjust the width of columns and column rulers. <a href=\"https://community.automaticcss.com/c/classes/text-content-column-classes\" target=\"_blank\">See documentation</a>",
+                    "content": {
+                        "column-widths": {
+                            "type": "accordion",
+                            "title": "Column Widths",
+                            "tooltip": "",
+                            "description": "Adjust the widths of text columns (.col-width classes).",
+                            "content": {
+                                "col-width-s": {
+                                    "type": "variable",
+                                    "title": "Column Width (Small)",
+                                    "tooltip": ""
+                                },
+                                "col-width-m": {
+                                    "type": "variable",
+                                    "title": "Column Width (Medium)",
+                                    "tooltip": ""
+                                },
+                                "col-width-l": {
+                                    "type": "variable",
+                                    "title": "Column Width (Large)",
+                                    "tooltip": ""
+                                }
+                            }
+                        },
+                        "columns-rule-widths": {
+                            "type": "accordion",
+                            "title": "Column Rule Widths",
+                            "tooltip": "",
+                            "description": "Adjust the width of text column rulers (vertical dividers).",
+                            "content": {
+                                "col-rule-width-s": {
+                                    "type": "variable",
+                                    "title": "Column Rule Width  (Small)",
+                                    "tooltip": ""
+                                },
+                                "col-rule-width-m": {
+                                    "type": "variable",
+                                    "title": "Column Rule Width  (Medium)",
+                                    "tooltip": ""
+                                },
+                                "col-rule-width-l": {
+                                    "type": "variable",
+                                    "title": "Column Rule Width  (Large)",
+                                    "tooltip": ""
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "plugin": {
+            "title": "Options",
+            "description": "Set the options for the Automatic.css plugin",
+            "content": {
+                "framework-settings": {
+                    "type": "panel",
+                    "title": "Framework Settings",
+                    "tooltip": "",
+                    "content": {
+                        "option-smooth-scrolling": {
+                            "type": "variable",
+                            "title": "Enable CSS Smooth Scrolling",
+                            "tooltip": ""
+                        },
+                        "scroll-margin": {
+                            "type": "variable",
+                            "title": "Scroll Offset",
+                            "tooltip": "Set an offset for smooth scrolling (margin above the target)."
+                        },
+                        "header-height": {
+                            "type": "variable",
+                            "title": "Header Height",
+                            "tooltip": "Set the height of your sticky header. This is added to your scroll offset."
+                        }
+                    }
+                },
+                "plugin-settings": {
+                    "type": "panel",
+                    "title": "Plugin Settings",
+                    "tooltip": "",
+                    "content": {
+                        "delete-on-deactivation": {
+                            "type": "variable",
+                            "title": "Delete on deactivation",
+                            "tooltip": "Type \"yes\" if we should delete the plugin's options when you deactivate the plugin."
+                        },
+                        "receive-beta-releases": {
+                            "type": "variable",
+                            "title": "Receive beta releases",
+                            "tooltip": ""
+                        },
+                        "debug-enabled": {
+                            "type": "variable",
+                            "title": "Enable debugging",
+                            "tooltip": ""
+                        }
+                    }
+                }
+            }
+        },
+        "setup": {
+            "title": "Guides",
+            "description": "Helpful resources for ACSS.",
+            "content": {
+                "setup-guide": {
+                    "type": "panel",
+                    "title": "Setup Guide",
+                    "description": "Automatic.css is fundamentally different from other utility class systems. This is precisely what makes it so powerful and preferential. Before trying to use the system, it's important that you understand how it works. You'll find all documentation, setup steps, tips, tricks, and support in the <a href=\"https://community.automaticcss.com/\" target=\"_blank\">private Automatic.css Community</a> (license required)."
+                },
+                "style-guide": {
+                    "type": "panel",
+                    "title": "Style Guide",
+                    "description": "To install the official ACSS UI Style Guide, click the Oxygen design set key to copy it and then follow our <a href=\"https://community.automaticcss.com/c/setup/installing-the-ui-style-guide\" target=\"_blank\">UI Style Guide installation instructions</a>",
+                    "content": {
+                        "design-set-key": {
+                            "type": "variable",
+                            "title": "Design Set Key",
+                            "tooltip": "Click to copy the key for the Oxygen design set"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

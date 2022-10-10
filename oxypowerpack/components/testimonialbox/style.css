@@ -1,0 +1,75 @@
+
+.oxyPowerPack-testimonialbox {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    min-width: 230px;
+    /*max-width: 315px;*/
+    width: 100%;
+    color: #141414;
+    text-align: left;
+    line-height: 1.4em;
+    background-color: #e6e6e6;
+    padding-top: 88px;
+}
+.oxyPowerPack-testimonialbox * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.oxyPowerPack-testimonialbox img {
+    max-width: 100%;
+    vertical-align: top;
+    opacity: 0.85;
+}
+.oxyPowerPack-testimonialbox figcaption {
+    width: 100%;
+    background-color: #141414;
+    padding: 25px;
+    position: relative;
+    color: #ffffff;
+}
+.oxyPowerPack-testimonialbox .profile {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    max-height: 88px;
+    opacity: 1;
+}
+.oxyPowerPack-testimonialbox .header {
+    margin: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+.oxyPowerPack-testimonialbox .header h3 {
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.oxyPowerPack-testimonialbox .header span.subtitle {
+    display: block;
+    font-size: 0.65em;
+    font-weight: 600;
+    color: #bdc3c7;
+}
+.oxyPowerPack-testimonialbox blockquote {
+    margin: 0 0 10px;
+    padding: 0 0 30px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    font-style: italic;
+    font-weight: 300;
+}
+.oxyPowerPack-testimonialbox blockquote:after {
+    /*font-family: 'FontAwesome';*/
+    position: absolute;
+    font-size: 180px;
+    line-height: 1em;
+    color: #636363;
+    font-style: normal;
+    content: "\201D";
+    right: 20px;
+    bottom: -105px;
+}

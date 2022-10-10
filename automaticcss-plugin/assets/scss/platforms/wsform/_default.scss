@@ -1,0 +1,315 @@
+@import "../../dashboard/form-vars";
+@import "../../dashboard/text-vars";
+@import "../../dashboard/breakpoints";
+@import "../../dashboard/color-vars";
+@import "../../dashboard/radius-vars";
+@import "../../dashboard/spacing-vars";
+@import "../../helpers/calc-math";
+@import "../../helpers/functions";
+
+///// ALL FORMS
+
+// Focus
+
+.form--main,
+.form--alt {
+  input[type="date"].wsf-field:focus,
+  input[type="datetime-local"].wsf-field:focus,
+  input[type="file"].wsf-field:focus,
+  input[type="month"].wsf-field:focus,
+  input[type="password"].wsf-field:focus,
+  input[type="search"].wsf-field:focus,
+  input[type="time"].wsf-field:focus,
+  input[type="week"].wsf-field:focus,
+  input[type="email"].wsf-field:focus,
+  input[type="number"].wsf-field:focus,
+  input[type="tel"].wsf-field:focus,
+  input[type="text"].wsf-field:focus,
+  input[type="url"].wsf-field:focus,
+  select.wsf-field:focus,
+  textarea.wsf-field:focus {
+    border-color: var(--primary);
+    box-shadow: none;
+    outline: 1px solid var(--primary);
+  }
+}
+
+// Labels
+.form--main,
+.form--alt {
+  label.wsf-label {
+    font-size: rem($f-label-size-pure);
+    font-size: fluidCalc($f-label-size-min, $f-label-size-max);
+    font-size: fluidClamp($f-label-size-min, $f-label-size-max);
+    margin-bottom: 0.25em;
+  }
+}
+
+// Legends
+.form--main,
+.form--alt {
+  .wsf-section > legend,
+  .wsf-fieldset > legend {
+    font-size: rem($f-legend-size-pure);
+    font-size: fluidCalc($f-legend-size-min, $f-legend-size-max);
+    font-size: fluidClamp($f-legend-size-min, $f-legend-size-max);
+    font-weight: 600;
+    margin-bottom: rem($f-legend-margin-bottom);
+  }
+}
+
+// Fields
+
+.form--main,
+.form--alt {
+  .wsf-field-wrapper {
+    margin-bottom: rem($f-field-margin-bottom);
+  }
+}
+
+.form--main,
+.form--alt {
+  .wsf-tile {
+    padding-left: rem($f-field-margin-bottom / 2);
+    padding-right: rem($f-field-margin-bottom / 2);
+  }
+}
+
+// Inputs
+.form--main,
+.form--alt {
+  input[type="date"].wsf-field,
+  input[type="datetime-local"].wsf-field,
+  input[type="file"].wsf-field,
+  input[type="month"].wsf-field,
+  input[type="password"].wsf-field,
+  input[type="search"].wsf-field,
+  input[type="time"].wsf-field,
+  input[type="week"].wsf-field,
+  input[type="email"].wsf-field,
+  input[type="number"].wsf-field,
+  input[type="tel"].wsf-field,
+  input[type="text"].wsf-field,
+  input[type="url"].wsf-field,
+  select.wsf-field:not([multiple]):not([size]) {
+    font-size: rem($f-input-text-size-pure);
+    font-size: fluidCalc($f-input-text-size-min, $f-input-text-size-max);
+    font-size: fluidClamp($f-input-text-size-min, $f-input-text-size-max);
+    height: auto;
+    min-height: rem($f-input-height);
+    border-radius: $f-input-border-radius;
+    padding: rem($f-input-padding-y) rem($f-input-padding-x);
+
+    &::-webkit-input-placeholder {
+      opacity: $f-input-placeholder-opacity;
+    }
+
+    &::-moz-placeholder {
+      opacity: $f-input-placeholder-opacity;
+    }
+
+    &:-ms-input-placeholder {
+      opacity: $f-input-placeholder-opacity;
+    }
+
+    &::-ms-input-placeholder {
+      opacity: $f-input-placeholder-opacity;
+    }
+
+    &::placeholder {
+      opacity: $f-input-placeholder-opacity;
+    }
+  }
+  textarea.wsf-field {
+    border-width: $f-input-border-size;
+    border-radius: $f-input-border-radius;
+    font-size: rem($f-input-text-size-pure);
+    font-size: fluidCalc($f-input-text-size-min, $f-input-text-size-max);
+    font-size: fluidClamp($f-input-text-size-min, $f-input-text-size-max);
+    padding: rem($f-input-padding-y) rem($f-input-padding-x);
+
+    &::-webkit-input-placeholder {
+      opacity: $f-input-placeholder-opacity;
+    }
+
+    &::-moz-placeholder {
+      opacity: $f-input-placeholder-opacity;
+    }
+
+    &:-ms-input-placeholder {
+      opacity: $f-input-placeholder-opacity;
+    }
+
+    &::-ms-input-placeholder {
+      opacity: $f-input-placeholder-opacity;
+    }
+
+    &::placeholder {
+      opacity: $f-input-placeholder-opacity;
+    }
+  }
+}
+
+// Buttons
+.form--main,
+.form--alt {
+  button.wsf-button.wsf-button-primary {
+    font-size: rem($f-btn-text-size-pure);
+    font-size: fluidCalc($f-btn-text-size-min, $f-btn-text-size-max);
+    font-size: fluidClamp($f-btn-text-size-min, $f-btn-text-size-max);
+    border-width: $f-btn-border-size;
+    border-radius: $f-input-border-radius;
+    height: auto;
+    min-height: rem($f-btn-height);
+  }
+  button.wsf-button {
+    height: auto;
+    min-height: rem($f-btn-height);
+    font-size: rem($f-btn-text-size-pure);
+    font-size: fluidCalc($f-btn-text-size-min, $f-btn-text-size-max);
+    font-size: fluidClamp($f-btn-text-size-min, $f-btn-text-size-max);
+    border-width: $f-btn-border-size;
+    border-radius: $f-input-border-radius;
+    min-width: 10rem;
+  }
+}
+
+// Progress
+.form--main,
+.form--alt {
+  progress.wsf-progress[value] {
+    height: rem($f-progress-height);
+    border-radius: $f-progress-bar-radius;
+  }
+  progress.wsf-progress[value]::-moz-progress-bar {
+    height: rem($f-progress-height);
+    border-radius: $f-progress-bar-radius;
+  }
+}
+
+// Tabs
+.form--main,
+.form--alt {
+  .wsf-form ul.wsf-group-tabs {
+    border-width: rem($f-tabs-border-size);
+    margin-bottom: rem($f-tabs-margin-bottom);
+  }
+  .wsf-form ul.wsf-group-tabs > li {
+    padding: 0 rem($f-tabs-padding);
+  }
+  .wsf-form ul.wsf-group-tabs > li > a {
+    border-width: $f-tab-border-size;
+    border-radius: $f-tab-border-radius;
+    font-size: rem($f-tabs-text-size-pure);
+    font-size: fluidCalc($f-tabs-text-size-min, $f-btn-text-size-max);
+    font-size: fluidClamp($f-tabs-text-size-min, $f-btn-text-size-max);
+    padding: rem($f-tab-padding-y) rem($f-tab-padding-x);
+  }
+}
+
+// Checkboxes
+.form--main,
+.form--alt {
+  input[type="checkbox"].wsf-field + label.wsf-label::before {
+    border-width: $f-input-border-size;
+    border-color: $f-input-border-color;
+    border-radius: $f-input-border-radius;
+  }
+}
+
+.form--main,
+.form--alt {
+  [data-type="checkbox"] label {
+    margin-bottom: 0.35em !important;
+  }
+}
+
+.form--main,
+.form--alt {
+  input[type="checkbox"].wsf-field:disabled + label.wsf-label::before {
+    opacity: 0.5;
+  }
+}
+
+// Radio Buttons
+
+.form--main,
+.form--alt {
+  input[type="radio"].wsf-field + label.wsf-label::before {
+    border: 1px solid $f-input-border-color;
+  }
+}
+
+.form--main,
+.form--alt {
+  [data-type="radio"] label {
+    margin-bottom: 0.35em !important;
+  }
+}
+
+// Dropzone
+
+.form--main input[type="text"].wsf-field ~ .dropzone {
+  border-radius: $f-input-border-radius;
+}
+
+// File Upload
+
+.form--main input[type="file"].wsf-field::file-selector-button {
+  -webkit-border-end: $f-input-border-size solid $f-input-border-color;
+  border-inline-end: $f-input-border-size solid $f-input-border-color;
+  border-radius: $f-input-border-radius;
+  font-size: rem($f-label-size-pure);
+  font-size: fluidCalc($f-label-size-min, $f-label-size-max);
+  font-size: fluidClamp($f-label-size-min, $f-label-size-max);
+  height: auto;
+  min-height: rem($f-input-height);
+}
+
+// Signature (Canvas)
+
+.form--main,
+.form--alt {
+  input[type="text"].wsf-field ~ canvas {
+    background-color: white;
+    border: 1px solid $f-input-border-color;
+    border-radius: $f-input-border-radius;
+  }
+}
+
+// Legal
+
+.form--main,
+.form--alt {
+  [data-wsf-legal].wsf-field {
+    border-width: $f-input-border-size;
+    border-radius: $f-input-border-radius;
+    font-size: $text-s-pure;
+    font-size: fluidCalc($text-s-min, $text-s-max);
+    font-size: fluidClamp($text-s-min, $text-s-max);
+    padding: rem($f-input-padding-y) rem($f-input-padding-x);
+  }
+}
+
+// Alert
+
+.form--main,
+.form--alt {
+  .wsf-alert {
+    border-radius: $f-input-border-radius;
+    font-size: $text-s-pure;
+    font-size: fluidCalc($text-s-min, $text-s-max);
+    font-size: fluidClamp($text-s-min, $text-s-max);
+    padding: rem($f-input-padding-y) rem($f-input-padding-x);
+    margin-bottom: 20px;
+  }
+}
+
+.form--main,
+.form--alt {
+  .minicolors-theme-ws-form .minicolors-swatch {
+    height: $f-input-height * 0.6;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

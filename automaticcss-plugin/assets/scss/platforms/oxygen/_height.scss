@@ -1,0 +1,66 @@
+@each $height in $heights {
+  @if $height != full {
+    .height--#{$height}:not(.ct-section),
+    .ct-section.height--#{$height} > .ct-section-inner-wrap {
+      min-height: #{$height}vh;
+    }
+  } @else if $height == full {
+    .height--#{$height}:not(.ct-section),
+    .ct-section.height--#{$height} > .ct-section-inner-wrap {
+      min-height: 100vh;
+    }
+  }
+}
+
+@each $breakpoint, $value in $breakpoints {
+  @include breakpoint($breakpoint) {
+    @each $height in $heights {
+      @if $height != full {
+        .height--#{$breakpoint}-#{$height}:not(.ct-section),
+        .ct-section.height--#{$breakpoint}-#{$height} > .ct-section-inner-wrap {
+          min-height: #{$height}vh;
+        }
+      } @else if $height == full {
+        .height--#{$breakpoint}-#{$height}:not(.ct-section),
+        .ct-section.height--#{$breakpoint}-#{$height} > .ct-section-inner-wrap {
+          min-height: 100vh;
+        }
+      }
+    }
+  }
+}
+
+// MAX HEIGHTS
+@each $height in $heights {
+  @if $height != full {
+    .max-height--#{$height}:not(.ct-section),
+    .ct-section.max-height--#{$height} > .ct-section-inner-wrap {
+      max-height: #{$height}vh;
+    }
+  } @else if $height == full {
+    .max-height--#{$height}:not(.ct-section),
+    .ct-section.max-height--#{$height} > .ct-section-inner-wrap {
+      max-height: 100vh;
+    }
+  }
+}
+
+@each $breakpoint, $value in $breakpoints {
+  @include breakpoint($breakpoint) {
+    @each $height in $heights {
+      @if $height != full {
+        .max-height--#{$breakpoint}-#{$height}:not(.ct-section),
+        .ct-section.max-height--#{$breakpoint}-#{$height}
+          > .ct-section-inner-wrap {
+          max-height: #{$height}vh;
+        }
+      } @else if $height == full {
+        .max-height--#{$breakpoint}-#{$height}:not(.ct-section),
+        .ct-section.max-height--#{$breakpoint}-#{$height}
+          > .ct-section-inner-wrap {
+          max-height: 100vh;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+body{
+  &.oxygen-builder-body{
+    &.oxypowerpack-docked{
+      #oxygen-sidebar,#ct-viewport-container{
+        height: calc(100vh - 405px)
+      }
+      .ct-panel-elements-managers, .oxygen-global-settings {
+        bottom: 350px;
+      }
+    }
+  }
+}

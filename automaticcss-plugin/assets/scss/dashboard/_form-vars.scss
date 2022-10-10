@@ -1,0 +1,80 @@
+// Labels
+$f-label-size-pure: 1.4 !default;
+$f-label-size-min: 1.6 !default;
+$f-label-size-max: 1.8 !default;
+$f-label-text-color: var(--base-dark);
+$f-label-background-color: null;
+$f-label-line-height: 1.2;
+$f-label-padding-x: 0;
+$f-label-padding-y: 0;
+
+// Legend
+$f-legend-text-color: var(--base-dark);
+$f-legend-text-weight: 600;
+$f-legend-size-pure: 1.5;
+$f-legend-size-min: 1.8;
+$f-legend-size-max: 2;
+$f-legend-margin-bottom: 2;
+
+// Fields
+
+$f-field-margin-bottom: 2;
+
+// Inputs
+$f-input-background: var(--shade-white);
+$f-input-border-size: 0.1;
+$f-input-border-color: var(--base-light);
+$f-input-border-radius: $btn-radius;
+$f-input-text-size-pure: 1.4;
+$f-input-text-size-min: 1.6;
+$f-input-text-size-max: 1.8;
+$f-input-text-color: var(--base-dark);
+$f-input-height: 5;
+$f-input-placeholder-color: var(--base-dark);
+$f-input-placeholder-opacity: 0.5;
+$f-input-padding-x: 1;
+$f-input-padding-y: 1.2;
+
+// Buttons
+$f-btn-background: var(--primary);
+$f-btn-background-hover: var(--primary-hover);
+$f-btn-text-size-pure: 1.4;
+$f-btn-text-size-min: 1.6;
+$f-btn-text-size-max: 1.8;
+$f-btn-text-color: var(--primary-ultra-dark);
+$f-btn-text-color-hover: var(--primary-ultra-dark);
+$f-btn-border-size: $btn-border-size;
+$f-btn-border-color: var(--primary);
+$f-btn-border-hover-color: var(--primary-hover);
+$f-btn-height: 5;
+
+// Option Buttons
+
+$f-option-background: $f-input-background;
+$f-option-border-color: $f-input-border-color;
+
+// Progress
+
+$f-progress-height: 3;
+$f-progress-background-color: var(--primary-ultra-light);
+$f-progress-bar-fill-color: var(--primary);
+$f-progress-bar-radius: $btn-radius;
+
+// Tabs
+$f-tabs-border-size: 0;
+$f-tabs-border-color: $f-input-border-color;
+$f-tabs-margin-bottom: $base-space;
+$f-tabs-padding: 0.5;
+$f-tab-background-color: transparent;
+$f-tab-border-size: $f-input-border-size;
+$f-tab-border-radius: $btn-radius;
+$f-tab-border-color: $f-input-border-color;
+$f-tabs-text-color: var(--base-dark);
+$f-tabs-text-size-pure: 1.4;
+$f-tabs-text-size-min: 1.6;
+$f-tabs-text-size-max: 1.8;
+$f-tab-padding-x: 2;
+$f-tab-padding-y: 1;
+$f-tab-active-background-color: transparent;
+$f-tab-active-border-color: var(--primary);
+$f-tab-active-text-color: var(--primary);

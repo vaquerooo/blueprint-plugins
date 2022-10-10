@@ -1,0 +1,27 @@
+{
+  "name": "oxypowerpack",
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "rimraf assets/dist/",
+    "clean:dist": "rimraf assets/dist/**/*",
+    "sass": "node-sass assets/sources/sass/oxypowerpack.scss -o assets/dist/",
+    "minifycss": "css-minify --d assets/dist",
+    "copyminifiedcss": "cpx css-dist/**/* assets/dist",
+    "cleanminifytemp": "rimraf css-dist/",
+    "uglifyDrawer": "uglifyjs assets/sources/js/oxypowerpack.js -o assets/dist/oxypowerpack.min.js --compress --mangle",
+    "uglifyEvents": "uglifyjs assets/sources/js/oxypowerpackEvents.js -o assets/dist/oxypowerpackEvents.min.js --compress --mangle",
+    "uglifyRotator": "uglifyjs assets/sources/js/oxypowerpackRotator.js -o assets/dist/oxypowerpackRotator.min.js --compress --mangle",
+    "uglifyLazyloader": "uglifyjs assets/sources/js/oxypowerpackLazyLoad.js -o assets/dist/oxypowerpackLazyLoad.min.js --compress --mangle",
+    "uglifyTooltips": "uglifyjs assets/sources/js/oxypowerpackTooltips.js -o assets/dist/oxypowerpackTooltips.min.js --compress --mangle",
+    "build": "npm install && npm run clean:dist && npm run sass && npm run minifycss && npm run copyminifiedcss && npm run cleanminifytemp && npm run uglifyDrawer && npm run uglifyEvents && npm run uglifyRotator && npm run uglifyLazyloader && npm run uglifyTooltips"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "cpx": "^1.5.0",
+    "css-minify": "^1.0.1",
+    "del": "^2.2.2",
+    "node-sass": "^4.14.0",
+    "rimraf": "^2.6.2",
+    "uglify-js": "^3.6.0"
+  }
+}

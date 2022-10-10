@@ -1,0 +1,42 @@
+body {
+  @include map-get-fluid-text(m);
+  background-color: $body-bg-color;
+}
+
+h1 {
+  @include map-get-fluid-heading(h1);
+  line-height: $h1-lh;
+}
+h2 {
+  @include map-get-fluid-heading(h2);
+  line-height: $h2-lh;
+}
+h3 {
+  @include map-get-fluid-heading(h3);
+  line-height: $h3-lh;
+}
+h4 {
+  @include map-get-fluid-heading(h4);
+  line-height: $h4-lh;
+}
+h5 {
+  @include map-get-fluid-heading(h5);
+  line-height: $h5-lh;
+}
+h6 {
+  @include map-get-fluid-heading(h6);
+  line-height: $h6-lh;
+}
+
+h1.brxe-heading,
+h2.brxe-heading,
+h3.brxe-heading,
+h4.brxe-heading,
+h5.brxe-heading,
+h6.brxe-heading {
+  max-width: $heading-line-length;
+}
+
+p[class*="brxe"] {
+  max-width: $text-line-length;
+}

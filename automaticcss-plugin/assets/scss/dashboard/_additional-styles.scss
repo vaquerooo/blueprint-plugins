@@ -1,0 +1,8 @@
+// Focus Styles
+$focus-color: var(--primary) !default;
+$focus-offset: 0.25em !default;
+
+// Scroll Styles
+$scroll-margin: 0 !default;
+$header-height: 0 !default;
+$offset: $scroll-margin + $header-height;

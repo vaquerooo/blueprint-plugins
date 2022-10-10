@@ -1,0 +1,197 @@
+@import "../../helpers/functions";
+@import "../../dashboard/text-vars";
+
+// Text Color
+.form--main .ws-form,
+.form--main .wsf-help {
+  color: $f-label-text-color;
+}
+
+// Inputs
+.form--main {
+  input[type="date"].wsf-field,
+  input[type="datetime-local"].wsf-field,
+  input[type="file"].wsf-field,
+  input[type="month"].wsf-field,
+  input[type="password"].wsf-field,
+  input[type="search"].wsf-field,
+  input[type="time"].wsf-field,
+  input[type="week"].wsf-field,
+  input[type="email"].wsf-field,
+  input[type="number"].wsf-field,
+  input[type="tel"].wsf-field,
+  input[type="text"].wsf-field,
+  input[type="url"].wsf-field,
+  select.wsf-field:not([multiple]):not([size]) {
+    border-color: $f-input-border-color;
+    background-color: $f-input-background;
+    color: $f-input-text-color;
+
+    &::-webkit-input-placeholder {
+      color: $f-input-placeholder-color;
+    }
+
+    &::-moz-placeholder {
+      color: $f-input-placeholder-color;
+    }
+
+    &:-ms-input-placeholder {
+      color: $f-input-placeholder-color;
+    }
+
+    &::-ms-input-placeholder {
+      color: $f-input-placeholder-color;
+    }
+
+    &::placeholder {
+      color: $f-input-placeholder-color;
+    }
+  }
+  textarea.wsf-field {
+    border-color: $f-input-border-color;
+    background-color: $f-input-background;
+    color: $f-input-text-color;
+
+    &::-webkit-input-placeholder {
+      color: $f-input-placeholder-color;
+    }
+
+    &::-moz-placeholder {
+      color: $f-input-placeholder-color;
+    }
+
+    &:-ms-input-placeholder {
+      color: $f-input-placeholder-color;
+    }
+
+    &::-ms-input-placeholder {
+      color: $f-input-placeholder-color;
+    }
+
+    &::placeholder {
+      color: $f-input-placeholder-color;
+    }
+  }
+}
+
+// Buttons
+.form--main {
+  button.wsf-button,
+  button.wsf-button.wsf-button-primary {
+    background-color: $f-btn-background;
+    border-color: $f-btn-border-color;
+    color: $f-btn-text-color;
+
+    &:hover {
+      background-color: $f-btn-background-hover;
+      border-color: $f-btn-border-hover-color;
+      color: $f-btn-text-color-hover;
+    }
+  }
+}
+
+// Progress
+.form--main {
+  progress.wsf-progress[value] {
+    background-color: $f-progress-background-color;
+  }
+  progress.wsf-progress[value]::-moz-progress-bar {
+    background-color: $f-progress-bar-fill-color;
+  }
+}
+
+// Tabs
+.form--main {
+  .wsf-form ul.wsf-group-tabs {
+    border-color: $f-tabs-border-color;
+  }
+  .wsf-form ul.wsf-group-tabs > li > a {
+    background-color: $f-tab-background-color;
+    border-color: $f-tab-border-color;
+    color: $f-tabs-text-color;
+  }
+  .wsf-form ul.wsf-group-tabs > li.wsf-tab-active > a {
+    background-color: $f-tab-active-background-color;
+    border-color: $f-tab-active-border-color;
+    border-bottom-color: $f-tab-active-border-color;
+    color: $f-tab-active-text-color;
+  }
+}
+
+// Checkboxes
+.form--main {
+  input[type="checkbox"].wsf-field:checked + label.wsf-label::before {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+  input[type="checkbox"].wsf-field + label.wsf-label::before {
+    background-color: $f-option-background;
+    border-color: $f-option-border-color;
+  }
+}
+
+// Radio Buttons
+
+//Normal State
+.form--main input[type="radio"].wsf-field + label.wsf-label::before {
+  background-color: $f-option-background;
+  border-color: $f-option-border-color;
+}
+
+//Activated
+.form--main input[type="radio"].wsf-field:checked + label.wsf-label::before {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+// Required
+.form--main .wsf-required-wrapper .wsf-text-danger {
+  color: var(--primary);
+}
+
+// Range Slider
+
+.form--main input[type="range"].wsf-field::-moz-range-track {
+  background-color: var(--primary-ultra-light);
+}
+
+.form--main input[type="range"].wsf-field::-moz-range-thumb {
+  background-color: var(--primary);
+}
+
+// Dropzone
+
+.form--main input[type="text"].wsf-field ~ .dropzone {
+  background-color: $f-input-background;
+  border-color: $f-input-border-color;
+}
+
+.form--main input[type="text"].wsf-field ~ .dropzone .dz-message {
+  color: $f-input-text-color;
+}
+
+// File Upload
+
+.form--main input[type="file"].wsf-field::file-selector-button {
+  background-color: $f-input-border-color;
+  color: $f-input-text-color;
+}
+
+// Legal
+
+.form--main {
+  [data-wsf-legal].wsf-field {
+    background-color: $f-input-background;
+    border-color: $f-input-border-color;
+    color: $f-input-text-color;
+  }
+}
+
+// Alert
+
+.form--main .wsf-alert {
+  background-color: var(--base-ultra-light);
+  -webkit-border-start: $f-input-border-size solid $f-input-border-color;
+  border-inline-start: $f-input-border-size solid $f-input-border-color;
+  border-radius: $f-input-border-radius;
+}

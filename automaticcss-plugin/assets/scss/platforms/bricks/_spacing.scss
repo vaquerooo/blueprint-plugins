@@ -1,0 +1,93 @@
+// Default Section Padding
+
+section.brxe-section {
+  @include fluid-section-padding(
+    $section-space-m-pure,
+    $section-m-min,
+    $section-m-max
+  );
+}
+
+// Default Header Padding
+header#brx-header > div {
+  padding-left: fluidClamp($section-padding-x-min, $section-padding-x-max);
+  padding-right: fluidClamp($section-padding-x-min, $section-padding-x-max);
+}
+
+// Section Padding Classes
+// Section padding in Bricks should be applied to a section's inner wrapper
+
+@each $size, $extension in $sizeExtensions {
+  section.pad-section--#{$extension}.brxe-container,
+  section.pad-section--#{$extension}.brxe-section,
+  section.pad-section--#{$extension}.brxe-div,
+  section.pad-section--#{$extension}.brxe-block,
+  .pad-section--#{$extension}.brxe-container,
+  .pad-section--#{$extension}.brxe-section,
+  .pad-section--#{$extension}.brxe-div,
+  .pad-section--#{$extension}.brxe-block {
+    @if $size == xs {
+      @include map-get-section-spacing(xs);
+    } @else if $size == s {
+      @include map-get-section-spacing(s);
+    } @else if $size == m {
+      @include map-get-section-spacing(m);
+    } @else if $size == l {
+      @include map-get-section-spacing(l);
+    } @else if $size == xl {
+      @include map-get-section-spacing(xl);
+    } @else if $size == xxl {
+      @include map-get-section-spacing(xxl);
+    }
+  }
+}
+
+section.pad-section--none.brxe-container,
+section.pad-section--none.brxe-section,
+section.pad-section--none.brxe-div,
+section.pad-section--none.brxe-block,
+.pad-section--none.brxe-container,
+.pad-section--none.brxe-section,
+.pad-section--none.brxe-div,
+.pad-section--none.brxe-block {
+  padding: 0 fluidClamp($section-padding-x-min, $section-padding-x-max);
+}
+
+@each $breakpoint, $value in $breakpoints {
+  @include breakpoint($breakpoint) {
+    @each $size, $extension in $sizeExtensions {
+      section.pad-section--#{$breakpoint}-#{$extension}.brxe-container,
+      section.pad-section--#{$breakpoint}-#{$extension}.brxe-section,
+      section.pad-section--#{$breakpoint}-#{$extension}.brxe-div,
+      section.pad-section--#{$breakpoint}-#{$extension}.brxe-block,
+      .pad-section--#{$breakpoint}-#{$extension}.brxe-container,
+      .pad-section--#{$breakpoint}-#{$extension}.brxe-section,
+      .pad-section--#{$breakpoint}-#{$extension}.brxe-div,
+      .pad-section--#{$breakpoint}-#{$extension}.brxe-block {
+        @if $size == xs {
+          @include map-get-section-spacing(xs);
+        } @else if $size == s {
+          @include map-get-section-spacing(s);
+        } @else if $size == m {
+          @include map-get-section-spacing(m);
+        } @else if $size == l {
+          @include map-get-section-spacing(l);
+        } @else if $size == xl {
+          @include map-get-section-spacing(xl);
+        } @else if $size == xxl {
+          @include map-get-section-spacing(xxl);
+        }
+      }
+      section.pad-section--#{$breakpoint}-none.brxe-container,
+      section.pad-section--#{$breakpoint}-none.brxe-section,
+      section.pad-section--#{$breakpoint}-none.brxe-div,
+      section.pad-section--#{$breakpoint}-none.brxe-block,
+      .pad-section--#{$breakpoint}-none.brxe-container,
+      .pad-section--#{$breakpoint}-none.brxe-section,
+      .pad-section--#{$breakpoint}-none.brxe-div,
+      .pad-section--#{$breakpoint}-none.brxe-block {
+        padding: 0 fluidClamp($section-padding-x-min, $section-padding-x-max);
+      }
+    }
+  }
+}

@@ -1,0 +1,276 @@
+// CHANGES HERE MUST BE MADE IN CERTAIN PLATFORMS AS WELL!
+
+@include if-oxygen-off {
+  // Grids
+  @each $grid-type, $col-set in $grids {
+    @each $col-count, $value in $col-set {
+      .grid--#{$col-count} {
+        display: grid !important;
+        grid-template-columns: #{$value};
+        width: 100%;
+      }
+    }
+  }
+  // Grid Breakpoints
+  @include breakpoint(xl) {
+    @each $grid-type, $col-set in $grids {
+      @each $col-count, $value in $col-set {
+        @if $grid-type == standard {
+          .grid--xl-#{$col-count} {
+            grid-template-columns: #{$value};
+          }
+        }
+      }
+    }
+  }
+
+  @include breakpoint(l) {
+    @each $grid-type, $col-set in $grids {
+      @each $col-count, $value in $col-set {
+        @if $grid-type == standard {
+          .grid--l-#{$col-count} {
+            grid-template-columns: #{$value};
+          }
+        }
+      }
+    }
+  }
+
+  @include breakpoint(m) {
+    @each $grid-type, $col-set in $grids {
+      @each $col-count, $value in $col-set {
+        @if $grid-type == standard {
+          .grid--m-#{$col-count} {
+            grid-template-columns: #{$value};
+          }
+        }
+      }
+    }
+  }
+
+  @include breakpoint(s) {
+    @each $grid-type, $col-set in $grids {
+      @each $col-count, $value in $col-set {
+        @if $grid-type == standard {
+          .grid--s-#{$col-count} {
+            grid-template-columns: #{$value};
+          }
+        }
+      }
+    }
+  }
+
+  // AUTO STAGGERED GRID MOBILE FIX
+
+  @include breakpoint(l) {
+    .grid--auto-1-2 {
+      display: grid !important;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(#{$auto-break-3}, 100vw - #{$auto-grid-math}), 1fr)
+      );
+    }
+    .grid--auto-1-3 {
+      display: grid !important;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(#{$auto-break-3}, 100vw - #{$auto-grid-math}), 1fr)
+      );
+    }
+    .grid--auto-3-2 {
+      display: grid !important;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(#{$auto-break-3}, 100vw - #{$auto-grid-math}), 1fr)
+      );
+    }
+    .grid--auto-2-3 {
+      display: grid !important;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(#{$auto-break-3}, 100vw - #{$auto-grid-math}), 1fr)
+      );
+    }
+    .grid--auto-2-1 {
+      display: grid !important;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(#{$auto-break-3}, 100vw - #{$auto-grid-math}), 1fr)
+      );
+    }
+    .grid--auto-3-1 {
+      display: grid !important;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(#{$auto-break-3}, 100vw - #{$auto-grid-math}), 1fr)
+      );
+    }
+  }
+}
+
+// SPANS AND STARTS
+
+@each $column, $value in $gridColumns {
+  .row-span--#{$column} {
+    grid-row: span #{$value};
+  }
+  .col-span--#{$column} {
+    grid-column: span #{$value};
+  }
+  .row-start--#{$column} {
+    grid-row-start: #{$value};
+  }
+  .col-start--#{$column} {
+    grid-column-start: #{$value};
+  }
+  .col-end--#{$column} {
+    grid-column-end: #{$value};
+  }
+}
+
+@include breakpoint(xl) {
+  @each $column, $value in $gridColumns {
+    .row-span--xl-#{$column} {
+      grid-row: span #{$value};
+    }
+    .col-span--xl-#{$column} {
+      grid-column: span #{$value};
+    }
+    .row-start--xl-#{$column} {
+      grid-row-start: #{$value};
+    }
+    .col-start--xl-#{$column} {
+      grid-column-start: #{$value};
+    }
+    .col-end--xl-#{$column} {
+      grid-column-end: #{$value};
+    }
+  }
+}
+
+@include breakpoint(l) {
+  @each $column, $value in $gridColumns {
+    .row-span--l-#{$column} {
+      grid-row: span #{$value};
+    }
+    .col-span--l-#{$column} {
+      grid-column: span #{$value};
+    }
+    .row-start--l-#{$column} {
+      grid-row-start: #{$value};
+    }
+    .col-start--l-#{$column} {
+      grid-column-start: #{$value};
+    }
+    .col-end--l-#{$column} {
+      grid-column-end: #{$value};
+    }
+  }
+}
+
+@include breakpoint(m) {
+  @each $column, $value in $gridColumns {
+    .row-span--m-#{$column} {
+      grid-row: span #{$value};
+    }
+    .col-span--m-#{$column} {
+      grid-column: span #{$value};
+    }
+    .row-start--m-#{$column} {
+      grid-row-start: #{$value};
+    }
+    .col-start--m-#{$column} {
+      grid-column-start: #{$value};
+    }
+    .col-end--m-#{$column} {
+      grid-column-end: #{$value};
+    }
+  }
+}
+
+@include breakpoint(s) {
+  @each $column, $value in $gridColumns {
+    .row-span--s-#{$column} {
+      grid-row: span #{$value};
+    }
+    .col-span--s-#{$column} {
+      grid-column: span #{$value};
+    }
+    .row-start--s-#{$column} {
+      grid-row-start: #{$value};
+    }
+    .col-start--s-#{$column} {
+      grid-column-start: #{$value};
+    }
+    .col-end--s-#{$column} {
+      grid-column-end: #{$value};
+    }
+  }
+}
+
+// Order
+
+.order--first {
+  order: -1;
+}
+.order--last {
+  order: 999;
+}
+.col-end--last {
+  grid-column-end: -1;
+}
+
+@include breakpoint(xl) {
+  .order--first-xl {
+    order: -1;
+  }
+  .order--last-xl {
+    order: 999;
+  }
+  .col-end--xl-last {
+    grid-column-end: -1;
+  }
+}
+
+@include breakpoint(l) {
+  .order--first-l {
+    order: -1;
+  }
+  .order--last-l {
+    order: 999;
+  }
+  .col-end--l-last {
+    grid-column-end: -1;
+  }
+}
+
+@include breakpoint(m) {
+  .order--first-m {
+    order: -1;
+  }
+  .order--last-m {
+    order: 999;
+  }
+  .col-end--m-last {
+    grid-column-end: -1;
+  }
+}
+
+@include breakpoint(s) {
+  .order--first-s {
+    order: -1;
+  }
+  .order--last-s {
+    order: 999;
+  }
+  .col-end--s-last {
+    grid-column-end: -1;
+  }
+}
+
+// Equal height children across all rows
+
+.grid--auto-rows {
+  grid-auto-rows: minmax(-webkit-min-content, 1fr);
+  grid-auto-rows: minmax(min-content, 1fr);
+}

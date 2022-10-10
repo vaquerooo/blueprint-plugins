@@ -1,0 +1,21 @@
+@include if-bricks-off {
+  .relative {
+    position: relative;
+  }
+
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    @if $option-sticky-offset == on {
+      top: $offset;
+    } @else {
+      top: 0;
+    }
+  }
+
+  @each $size, $value in $sticky {
+    .sticky-top--#{$size} {
+      top: #{$value};
+    }
+  }
+}

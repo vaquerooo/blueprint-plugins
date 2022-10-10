@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="38" viewBox="0 0 70 38">
+  <defs>
+    <clipPath id="clip-contact-form">
+      <rect width="70" height="38"/>
+    </clipPath>
+  </defs>
+  <g id="contact-form" clip-path="url(#clip-contact-form)">
+    <g id="streamline-icon-insert-image-bottom_140x140" data-name="streamline-icon-insert-image-bottom@140x140" transform="translate(16.083 -8.572)">
+      <path id="Path_129" data-name="Path 129" d="M70.469,14.572H55.417" transform="translate(-40.184)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_130" data-name="Path 130" d="M74.575,37.9H55.417" transform="translate(-40.184 -17.86)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_131" data-name="Path 131" d="M70.469,61.238H55.417" transform="translate(-40.184 -35.719)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_132" data-name="Path 132" d="M8.39,112.01l2.737-4.105H2.917" transform="translate(0 -71.439)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_133" data-name="Path 133" d="M26.25,90.4l2.737,4.105" transform="translate(-17.86 -58.044)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_134" data-name="Path 134" d="M55.417,90.4H73.206v8.211H55.417Z" transform="translate(-40.184 -58.044)" fill="none" stroke="#565c62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,79 @@
+// Remove all animations, transitions and smooth scroll for people that prefer not to see them
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+// Focus Styling
+// ALSO NEEDED IN PLATFORM OVERRIDES
+@include if-builders-off {
+  @include focus-styles;
+}
+
+// Hide text for everyone except for screen readers
+// HAS CORRESPONDING FEATURE STYLING IN BUILDERS!
+
+.hidden-accessible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+@include if-builders-off {
+  .link--skip {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    transform: translateY(-250%);
+    @include btn-default;
+    background: $btn-primary-bg;
+    color: $btn-primary-text;
+  }
+
+  .link--skip:focus {
+    transform: translateY(0);
+  }
+}
+
+// Make entire cards clickable
+// Oxygen requires separate code due to broken HTML structure.
+// Remove Oxygen condition if they fix the issue.
+
+@include if-oxygen-off {
+  .clickable-parent {
+    position: static;
+
+    a {
+      position: static;
+    }
+
+    > a::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      cursor: pointer !important;
+      display: flex;
+    }
+  }
+}
